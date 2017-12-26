@@ -26,6 +26,7 @@
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
 <?php } ?>
 <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+<script src="catalog/view/theme/mytheme/js/theme.js" type="text/javascript"></script>
 <?php foreach ($links as $link) { ?>
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>
@@ -38,7 +39,7 @@
 </head>
 <body class="<?php echo $class; ?>">
   <header>
-    <div class="logo-sm"></div>
-    <nav class="site-nav">
+    <a class="logo_sm"></a>
+    <nav class="site_nav">
     </nav>
   </header>

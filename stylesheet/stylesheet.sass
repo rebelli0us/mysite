@@ -24,12 +24,21 @@ header
 	position: fixed
 	top: 0
 	left: 0
+	box-shadow: 0 0 50px rgba(0,0,0,0.25)
+	transition: width .25s ease-in-out
 
+.active_menu
+	width: 250px
+	transition: all .25s ease-in-out
 
-.logo-sm
+.logo_sm
+	display: block
 	background: url("../image/logo.png") no-repeat
 	height: 45px
 	width: 37px
 	margin-bottom: 50px
+
+	&:hover
+		cursor: pointer
 
 @import "media"
