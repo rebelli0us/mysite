@@ -53,4 +53,13 @@
         <li><a href="#">Личный Кабинет</a></li>
       </nav>
     </div>
+    <nav class="social_nav">
+      <li class="fb_link"><a href="#"><span>Facebook</span><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li class="vk_link"><a href="#"><span>ВКонтакте</span><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+      <li class="ins_link"><a href="#"><span>Instagram</span><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li class="you_link"><a href="#"><span>YouTube</span><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+      <li class="tw_link"><a href="#"><span>Twitter</span><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li class="lin_link"><a href="#"><span>LinkedIn</span><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li class="gp_link"><a href="#"><span>Google+</span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>    
+    </nav>
   </header>
