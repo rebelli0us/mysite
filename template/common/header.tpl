@@ -39,7 +39,18 @@
 </head>
 <body class="<?php echo $class; ?>">
   <header>
-    <a class="logo_sm"></a>
-    <nav class="site_nav">
-    </nav>
+    <div class="logo_wrapper">
+      <a class="logo_sm" href="#"></a>
+      <span></span>
+    </div>
+    <div class="nav_wrapper">
+      <span></span>
+      <nav class="site_nav">
+        <li><a href="#">О Проекте</a></li>
+        <li><a href="#">Тарифы</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Блогго</a></li>
+        <li><a href="#">Личный Кабинет</a></li>
+      </nav>
+    </div>
   </header>

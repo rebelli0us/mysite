@@ -1,5 +1,5 @@
-$(document).ready(function() {
-	$('.logo_sm').click(function() {
-		$('header').toggleClass('active_menu');
-	});
-});
+// $(document).ready(function() {
+// 	$('.menu_bars').hover(function() {
+// 		$('header').toggleClass('active_menu');
+// 	});
+// });
