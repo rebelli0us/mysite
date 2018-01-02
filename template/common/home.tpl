@@ -1,7 +1,54 @@
 <?php echo $header; ?>
-<div class="container">
-  <div class="row">
-  	<div class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti amet consectetur necessitatibus, pariatur! Libero praesentium tempore voluptas earum, minima placeat incidunt mollitia temporibus magni enim voluptatem neque asperiores esse veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perspiciatis voluptate praesentium accusantium, recusandae natus sunt commodi ex cumque. Temporibus earum impedit harum ratione, labore laborum delectus consequatur non nam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius veritatis, voluptate repellendus saepe veniam modi tempora, corporis dolor! Consectetur, labore quibusdam similique magni eligendi asperiores ut, delectus ipsa quia.</div>
-    
+<div class="container main-container">
+	<!-- LANDING SECTION -->
+	<div class="row first_row">
+		<div class="col-sm-5 iphone_x">
+			<img src="catalog/view/theme/mytheme/image/iphone-x.png" title="iphone-x" alt="instagram app" class="img-responsive" />
+		</div>
+		<div class="col-sm-6 pull-right">
+			<div class="nav pull-right">
+				<ul class="list-inline">
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Регистрация</a></li>
+				</ul>
+			</div>
+			<div class="big_logo">
+				<a href="#"><img src="catalog/view/theme/mytheme/image/logo.png" title="locco.me" alt="big logo" class="img-responsive" /></a>
+			</div>
+		</div>
+	</div>
+	<!-- HOW IT WORKS SECTION -->
+	<div class="row second_row">
+		<div class="col-sm-12">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+		</div>
+	</div>
+	<!-- FOR WHOM SECTION -->
+	<div class="row third_row">
+		<div class="col-sm-12">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+		</div>
+	</div>
+	<!-- REVIEWS SECTION -->
+	<div class="row fourth_row">
+		<div class="col-sm-12">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+		</div>
+	</div>
+	<!-- CONTACT SECTION -->
+	<div class="row fifth_row">
+		<div class="col-sm-12">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aspernatur pariatur ab saepe non veritatis quidem dolore eligendi dicta doloribus esse voluptatem cupiditate quisquam, velit quaerat doloremque eius, qui eaque!
+		</div>
+	</div>
+
 </div>
 <?php echo $footer; ?>
