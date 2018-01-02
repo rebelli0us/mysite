@@ -20,6 +20,20 @@ nav
 			cursor: pointer
 			color: #000
 			text-decoration: none
+h2
+	.s_span
+		font-size: 26px
+	.m_span
+		font-size: 38px
+	.l_span
+		font-size: 42px
+.hidden_span
+	display: inline-block
+	width: 20px
+.first_span
+	padding-left: 8px
+.last_span
+	padding-right: 8px
 
 // ----- HEADER ----- // 
 header
@@ -27,7 +41,7 @@ header
 	width: 200px
 	padding: 50px 0
 	height: 100%
-	position: absolute
+	position: fixed
 	top: 0
 	left: -140px
 	overflow: hidden
@@ -59,6 +73,8 @@ header
 	right: 15px
 	transition: all .25s ease-in-out
 	transition-delay: .1s
+	h1
+		+hide-text
 .logo_wrapper
 	margin-bottom: 50px
 	span
@@ -173,11 +189,25 @@ header
 	width: 100vw
 	padding-left: 70px
 	.row
-		padding: 50px
 		overflow: hidden
+	h1,h2,h3
+		font-family: MyriadSetProSemiBold, sans-serif
+.row_wrapper
+	max-width: 1170px
+	overflow: hidden
+	margin: 0 auto
+	padding: 50px
+	overflow: hidden
 .first_row
 	background-color: #7cbcb5
-	height: 100vh
+	height: 70vh
+	min-height: 680px
+	h2
+		line-height: 1em
+		color: #fff
+		padding: 1px 0
+		background-color: #ffcc00
+		display: inline
 .second_row
 	height: fit-content
 	background-color: #f79885
@@ -189,9 +219,7 @@ header
 	background-color: #fcecc9
 .fifth_row
 	height: fit-content
-	background-color: #fcecc9
-
-
+	background-color: #b8959b
 
 
 @import "media"

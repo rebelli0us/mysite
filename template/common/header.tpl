@@ -40,7 +40,7 @@
 <body class="<?php echo $class; ?>">
   <header>
     <div class="logo_wrapper">
-      <a class="logo_sm" href="#"></a>
+      <a class="logo_sm" href="#"><h1>locco.me - переводчик для instagram, facebook, twitter, youtube</h1></a>
       <span></span>
     </div>
     <div class="nav_wrapper">
