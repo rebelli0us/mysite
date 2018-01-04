@@ -8,7 +8,7 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.6
+	line-height: 1.4
 	overflow-x: hidden
 	font-family: MyriadSetProText, sans-serif
 
@@ -176,29 +176,108 @@ header
 // ----- MAIN BODY ----- //
 .main-container
 	width: 100vw
+	color: #fff
 	h1,h2,h3
 		font-family: MyriadSetProSemiBold, sans-serif
 .row_wrapper
 	overflow: hidden
 	.row
 		max-width: 1170px
-		margin: 0 auto
+		margin: 20px auto
+.def_btn
+	display: block
+	background-color: pink
+	padding: 8px 40px
+	text-align: center
+	border-radius: 25px
+	font-size: 18px
+	color: #ccc
+	transition: all .25s ease-in-out
+	background: #aa46ca
+	background: linear-gradient(to top, #ae44c8, #8657db)
+	box-shadow: 0 0 5px rgba(0,0,0,0.5)
+	&:hover,&:focus
+		text-decoration: none
+		color: #fff
+		box-shadow: 0 0 2px rgba(0,0,0,0.5)
+.big_btn
+	display: block
+	padding: 15px 50px
+	font-size: 24px
+	border-radius: 35px
+	margin: 20px auto
+.cta_text
+	font-size: 22px
+	line-height: 1.1
+	sub
+		font-size: 150%
+.num
+	font-family: MyriadProBold, sans-serif
+	font-size: 48px
+	font-weight: bold
+.attention
+	font-size: 32px
+	margin-bottom: 40px
+	span, small, mark
+		color: #fff
+	mark
+		font-size: 125%
+		padding: 0
+	small
+		font-size: 75%
+// --------- FIRST SECTION --------- //
 .landing
 	background-color: #7cbcb5
 	height: 70vh
 	min-height: 680px
+	padding-top: 21px
+	.nav
+		margin: 10px
+	h2
+		text-align: right
+	span, small, mark
+		background: #ffcc00 // --- yellow
+.iphone_x img 
+	width: 85%
+	margin: auto
+.big_logo
+	margin-top: 100px
+
+// --------- SECOND SECTION --------- //
 .about_us
 	height: fit-content
 	background-color: #f79885
+	h4
+		font-size: 22px
+		font-family: MyriadSetProSemiBold, sans-serif
+	li
+		display: flex
+	.attention
+		span, small, mark
+			background-color: #3498db // --- blue
+
+
+
+
+
+// --------- THIRD SECTION --------- //	
 .for_whom
 	height: fit-content
 	background-color: #d6e2ce
+
+
+// --------- FOURTH SECTION --------- //
 .testimonials
 	height: fit-content
 	background-color: #fcecc9
+
+
+// --------- FIFTH SECTION --------- //	
 .contact_us
 	height: fit-content
 	background-color: #b8959b
+
+
 
 
 @import "media"

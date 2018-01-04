@@ -4,21 +4,21 @@
 	<section class="row_wrapper landing">
 		<div class="row">
 			<div class="col-sm-6 iphone_x">
-				<img src="catalog/view/theme/mytheme/image/iphone-x.png" title="iphone-x" alt="instagram app" class="img-responsive" />
+				<img src="catalog/view/theme/mytheme/image/iphone-x.png" title="iphone-x" alt="instagram app" class="img-responsive">
 			</div>
 			<div class="col-sm-5 pull-right">
 				<div class="nav pull-right">
 					<ul class="list-inline">
-						<li><a href="#" class="small_btn">Войти</a></li>
-						<li><a href="#" class="small_btn nobg_btn">Регистрация</a></li>
+						<li><a href="#" class="def_btn">Войти</a></li>
+						<li><a href="#" class="def_btn">Регистрация</a></li>
 					</ul>
 				</div>
-				<div class="big_logo">
-					<a href="#"><img src="catalog/view/theme/mytheme/image/logo.png" title="locco.me" alt="big logo" class="img-responsive"></a>
+				<img src="catalog/view/theme/mytheme/image/logo.png" title="locco.me" alt="big logo" class="img-responsive big_logo">
+				<h2 class="attention"><span>&ensp;Перевод <small>и</small> локализация&nbsp;<br><small>&ensp;для</small><mark>instagram, facebook,&nbsp;</mark><br><mark>twitter, youtube...&nbsp;</mark></span></h2>
+				<div class="pull-right">
+					<p class="cta_text text-center">пробная подпискa<br>на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
+					<a href="#" class="def_btn big_btn">Активировать</a>
 				</div>
-				<h2>Перевод и локализация для instagram, facebook, twitter, youtube...</h2>
-				<h4>пробная подпискa на 7 дней всего за $9.99</h4>
-				<a href="#" class="big_btn">Активировать</a> 
 			</div>
 		</div>
 	</section>
@@ -48,24 +48,24 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<h3>Узнай как работает locco.me - первый сервис-переводчик для социальных сетей</h3>
+				<h2 class="attention">&ensp;<span>&nbsp;Узнай <small>как</small> работает <mark>locco.me</mark>&nbsp;<br>&ensp;- первый <mark>сервис-переводчик</mark>&nbsp;<br>&ensp;<small>для</small> <mark>социальных сетей</mark></span></h3>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-3">
-				<h4>Оформляй пробную подписку на 7 дней всего за $9.99</h4>
-				<a href="#" class="big_btn">Активировать</a>
+				<p class="cta_text text-center">Оформляй пробную<br>подписку на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
+				<li><a href="#" class="def_btn big_btn">Активировать</a></li>
 			</div>
 			<div class="col-sm-3">
-				<h4>или активируй подходящий для твоих нужд план</h4>
-				<a href="#" class="big_btn nobg_btn">Все планы</a>
+				<p class="cta_text text-center">или активируй<br>подходящий для<br>твоих нужд план</p>
+				<li><a href="#" class="def_btn big_btn">Все планы</a></li>
 			</div>
 		</div>		
 	</section>
 	<!-- FOR WHOM SECTION -->
 	<section class="row_wrapper for_whom">
-		<h4 class="text-center"><i class="fa fa-quote-left" aria-hidden="true"></i>Кому понадобится сервис locco.me?<i class="fa fa-quote-right" aria-hidden="true"></i></h4>
 		<div class="row">
+			<h4 class="text-center"><i class="fa fa-quote-left" aria-hidden="true"></i>Кому понадобится сервис locco.me?<i class="fa fa-quote-right" aria-hidden="true"></i></h4>
 			<div class="col-sm-6">
 				<span class="num">1.</span>
 				<h4>instagram<span>/инстаграм</span></h4>
@@ -142,43 +142,4 @@
 	</section>
 
 </div>
-<footer class="main-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-3 location">
-				<p>ТОВ "Локко-ми", ЕГРПОУ: 10000000, Адрес: 00033, г. Киев, ул. Васильковская, 14, 3 этаж.</p>				
-			</div>
-			<div class="col-sm-3">
-				<ul>
-					<li class="footer-title">Связаться с нами</li>
-					<li class="footer-phone">т. +380123456789</li>
-					<li class="footer-phone">т. +380123456789</li>
-					<li class="footer-email"><a href="mailto:hello@locco.me">hello@locco.me</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<ul>
-					<li class="footer-title">Titel</li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-					<li><a href="<?php echo $sitemap; ?>">Карта сайту</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<ul>
-					<li class="footer-title">Title</li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li class="footer-title">Text</li>
-					<li class="methods"><img src="" alt=""></li>
-				</ul>
-			</div>
-		</div>
-		<p class="copyright">© 2017 locco.me - Cервис-переводчик для социальных сетей | Все права защищены</p>
-	</div>
-</footer>
+<?php echo $footer; ?>
