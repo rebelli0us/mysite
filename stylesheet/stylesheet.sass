@@ -177,49 +177,79 @@ header
 .main-container
 	width: 100vw
 	color: #fff
+	padding:
+		right: 0
+		left: 60px
 	h1,h2,h3
 		font-family: MyriadSetProSemiBold, sans-serif
 .row_wrapper
 	overflow: hidden
+	padding:
+		bottom: 60px
+		top: 40px
+		right: 20px
+		left: 10px
 	.row
 		max-width: 1170px
 		margin: 20px auto
 .def_btn
 	display: block
 	background-color: pink
-	padding: 8px 40px
+	padding: 8px 20px
 	text-align: center
 	border-radius: 25px
 	font-size: 18px
-	color: #ccc
+	position: relative
+	color: #ededed
 	transition: all .25s ease-in-out
-	background: #aa46ca
+	background-color: #aa46ca
 	background: linear-gradient(to top, #ae44c8, #8657db)
 	box-shadow: 0 0 5px rgba(0,0,0,0.5)
+	font-family: MyriadSetProThin, sans-serif
+	z-index: 100
+	&:before
+		content: ''   
+		display: block
+		height: 100%
+		width: 100%
+		position: absolute
+		background: linear-gradient(to top, #e060ff, #996cea)
+		border-radius: inherit
+		top: 0
+		left: 0
+		opacity: 0
+		transition: all .25s ease-in-out
+		z-index: -100
 	&:hover,&:focus
 		text-decoration: none
 		color: #fff
 		box-shadow: 0 0 2px rgba(0,0,0,0.5)
+		background-color: #e060ff
+		outline: none
+		&:before
+			opacity: 1
 .big_btn
 	display: block
-	padding: 15px 50px
-	font-size: 24px
+	padding: 10px 30px
+	font-size: 28px
 	border-radius: 35px
-	margin: 20px auto
 .cta_text
 	font-size: 22px
 	line-height: 1.1
+	margin-bottom: 20px
 	sub
 		font-size: 150%
 .num
 	font-family: MyriadProBold, sans-serif
 	font-size: 48px
 	font-weight: bold
-.attention
+.focused
 	font-size: 32px
 	margin-bottom: 40px
 	span, small, mark
 		color: #fff
+	span
+		padding: 8px 10px
 	mark
 		font-size: 125%
 		padding: 0
@@ -227,7 +257,12 @@ header
 		font-size: 75%
 // --------- FIRST SECTION --------- //
 .landing
-	background-color: #7cbcb5
+	background:
+		color: #7cbcb5
+		image: url("../image/landing_bg.jpg")
+		repeat: no-repeat
+		size: cover
+		position: bottom
 	height: 70vh
 	min-height: 680px
 	padding-top: 21px
@@ -246,36 +281,107 @@ header
 // --------- SECOND SECTION --------- //
 .about_us
 	height: fit-content
-	background-color: #f79885
+	background:
+		color: #f79885
+		image: url("../image/about_us_bg.jpg")
+		repeat: no-repeat
+		size: cover
 	h4
 		font-size: 22px
 		font-family: MyriadSetProSemiBold, sans-serif
 	li
 		display: flex
-	.attention
+	.focused
+		z-index: 2
+		position: relative
 		span, small, mark
 			background-color: #3498db // --- blue
-
-
-
-
+	.big_btn
+		margin: 0 auto
+.ipad_wrapper
+	position: relative
+	.ipad_image
+		position: absolute
+		right: 5%
+		top: -15%
+		// z-index: 1
 
 // --------- THIRD SECTION --------- //	
 .for_whom
 	height: fit-content
-	background-color: #d6e2ce
+	background:
+		color: #d6e2ce
+		image: url("../image/for_whom_bg.jpg")
+		repeat: no-repeat
+		size: cover
+
+	.focused
+		span, small, mark, sup, sub
+			background-color: #1abc9c // --- green
+	small
+		color: #ededed
+	sup
+		padding: 10px
+		margin-right: -10px
+	sub
+		padding: 10px
+		margin-left: -10px
+	h3
+		margin-top: 0
+		font-size: 36px
+		font-family: MyriadProBold, sans-serif
+	p
+		padding: 0 50px
 
 
 // --------- FOURTH SECTION --------- //
 .testimonials
 	height: fit-content
-	background-color: #fcecc9
+	background:
+		color: #fcecc9
+		image: url("../image/testimonials_bg.jpg")
+		repeat: no-repeat
+		size: cover
+		position: center
+	min-height: 500px
+	img
+		border-radius: 50%
+		border: 3px solid #fff
+		height: 100%
+		width: 100%
+		margin-top: 20px
+	.focused
+		span, small, mark, sup, sub
+			background-color: #3498db // --- blue
+	h5 mark
+		padding: 2px 10px 0 10px
+	p 
+		text-indent: 20px
+		line-height: 1.28
+.review_controls
+	margin-top: 100px
+	.arrow_down,.arrow_up
+		font-size: 48px
+		padding: 20px 8px
+		position: relative
+		color: #ededed
+		transition: all .25s ease-in-out
+		background-color: #3498db
+		box-shadow: 0 0 5px rgba(0,0,0,0.5)
+		&:hover,&:focus
+			color: #fff
+			box-shadow: 0 0 2px rgba(0,0,0,0.5)
+
 
 
 // --------- FIFTH SECTION --------- //	
 .contact_us
 	height: fit-content
-	background-color: #b8959b
+	background:
+		color: #b8959b
+		image: url("../image/footer_bg.jpg")
+		repeat: no-repeat
+		size: cover
 
 
 
