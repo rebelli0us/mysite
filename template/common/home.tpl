@@ -66,7 +66,7 @@
 	<!-- FOR WHOM SECTION -->
 	<section class="row_wrapper for_whom">
 		<div class="row">
-			<h2 class="text-center focused"><sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup><span>Кому понадобится сервис <mark>locco</mark>.me?</span><sub><i class="fa fa-quote-right" aria-hidden="true"></i></sub></h4>
+			<h2 class="text-center focused"><span>Кому понадобится сервис <mark>locco</mark>.me?</span></h4>
 			<div class="col-sm-6">
 				<h3><span class="num">1.</span> instagram<small> / инстаграм</small></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque quia earum ex iste modi distinctio deserunt excepturi ullam illo pariatur harum dicta at, debitis veritatis aliquid totam commodi perferendis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, veritatis odit dolorem, facere tempore magni nihil omnis accusamus, ipsa, doloremque eum distinctio expedita repudiandae saepe quos nemo corrupti corporis ipsum?</p>
@@ -100,16 +100,62 @@
 	<!-- REVIEWS SECTION -->
 	<section class="row_wrapper testimonials">
 		<div class="row">
-			<div class="col-sm-2 col-sm-offset-1 client_review">
-				<img src="catalog/view/theme/mytheme/image/client(2).jpg" alt="" class="img-responsive">
-			</div>
-			<div class="col-sm-7 review">
-				<h5 class="focused"><mark>Максим</mark></h5>
-				<p class="focused"><span>Я очень доволен услугой <mark>локализация</mark>&ensp;<br>&ensp;<small>на</small> английский. <mark>Рекомендую всем!</mark>&ensp;<br>&ensp;Появились зарубежные клиенты <small>в</small> бизнесе.&ensp;<br>&ensp;Спасибо сервису <mark>locco</mark>.me!</span></p>
-			</div>
-			<div class="col-sm1 review_controls">
-				<a href="#" class="arrow_up"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-				<a href="#" class="arrow_down"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+			<div class="col-sm-8 col-sm-offset-2">
+				<h3 class="focused text-center"><span>Отзывы о сервисe <mark>locco</mark>.me</span></h3>
+				<div class="review_controls">
+					<div class="review_control_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+					<div class="review_control_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+				</div>
+				<div class="reviews_wrapper">
+					<div class="review_unit active_review">
+						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(6).jpg" alt="review_face"></div>
+						<div class="review_content">
+							<strong class="review_name">Макс Соколов</strong>
+							<em class="review_title">Владелец товарного бизнеса</em>
+							<p>«Я очень доволен локализацией интсграм аккаунта моего бизнеса на английский язык. Действительно могу рекомендовать всем! Появились зарубежные клиенты в бизнесе, увеличились продажи и прибыль. Спасибо сервису locco.me за качественные и быстрые услуги!»</p>
+						</div>
+					</div>
+					<div class="review_unit">
+						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(5).jpg" alt="review_face"></div>
+						<div class="review_content">
+							<strong class="review_name">Виктор Ушаков</strong>
+							<em class="review_title">Блогер</em>
+							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat quos obcaecati harum, consequatur laborum tempora itaque quod dignissimos quas eligendi, illo excepturi, pariatur cumque veniam beatae et dolorum voluptatem.»</p>
+						</div>
+					</div>
+					<div class="review_unit">
+						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(4).jpg" alt="review_face"></div>
+						<div class="review_content">
+							<strong class="review_name">Диана Шевченко</strong>
+							<em class="review_title">Бьюти-блогер</em>
+							<p>«Lorem ipsum dolor sit amet, architecto repellendus dolor atque ducimus suscipit velit nihil, fugit perferendis quaerat inventore consectetur adipisicing elit. Eveniet voluptate obcaecati ut assumenda!»</p>
+						</div>
+					</div>
+					<div class="review_unit">
+						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(3).jpg" alt="review_face"></div>
+						<div class="review_content">
+							<strong class="review_name">Илона Д.</strong>
+							<em class="review_title">YouTube блогер и ведущая</em>
+							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi hic earum voluptas unde omnis, nobis beatae molestias quasi dolorem totam dolore!»</p>
+						</div>
+					</div>
+					<div class="review_unit">
+						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(2).jpg" alt="review_face"></div>
+						<div class="review_content">
+							<strong class="review_name">Игорь Леонидович</strong>
+							<em class="review_title">Бизнесс-тренер, блогер</em>
+							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non error cupiditate nam amet. Eos culpa quasi repellendus voluptatum inventore iure consequuntur cum, molestias sit porro, ex, sequi eius, corporis! A.»</p>
+						</div>
+					</div>
+					<div class="review_unit">
+						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(1).jpg" alt="review_face"></div>
+						<div class="review_content">
+							<strong class="review_name">Сергей Клоков</strong>
+							<em class="review_title">Владелец ресторанного бизнеса</em>
+							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores magni pariatur numquam doloremque dolorem qui mollitia enim ad rerum, laudantium, perferendis quibusdam voluptas accusantium vel quam maxime necessitatibus fugiat vero.»</p>
+						</div>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</section>
@@ -117,20 +163,20 @@
 	<section class="row_wrapper contact_us">
 		<div class="row">
 			<div class="col-sm-9 col-sm-offset-1">
-			<div id="ask-us" class="ask-us-form product-popup">
-				<h2>Остались вопросы?</h2>    
+			<div id="ask-us" class="ask-us-form">
+				<h3 class="text-center"><span>Остались вопросы?</span></h3>  
 				<form class="ajax-form">      
 					<input type="hidden" name="project_name" value="locco.me">
 					<input type="hidden" name="admin_email" value="hello@locco.me">
 					<input type="hidden" name="form_subject" value="Контактная форма">      
-					<input class="form-control" type="name" name="FirstName" placeholder="Как Вас зовут?" required>
-					<input class="form-control" type="email" name="Email" placeholder="Адрес email" required>
 					<div class="form-group">
 						<textarea name="text" class="form-control" id="user-comment" rows="3" placeholder="Вопрос / комментарий / предложение" required></textarea>
 					</div>
+					<input class="form-control" type="name" name="FirstName" placeholder="Как Вас зовут?" required>
+					<input class="form-control" type="email" name="Email" placeholder="Адрес email" required>
 					<button class="btn btn-primary">Отправить</button>
 				</form>
-				<div class="success">Спасибо!<br>Скоро придёт ответ на указанный email</div>
+				<!-- <div class="success">Спасибо!<br>Скоро придёт ответ на указанный email</div> -->
 			</div>
 			</div>
 		</div>

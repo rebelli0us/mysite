@@ -316,7 +316,7 @@ header
 		size: cover
 
 	.focused
-		span, small, mark, sup, sub
+		span, small, mark
 			background-color: #1abc9c // --- green
 	small
 		color: #ededed
@@ -344,35 +344,58 @@ header
 		size: cover
 		position: center
 	min-height: 500px
-	img
-		border-radius: 50%
-		border: 3px solid #fff
-		height: 100%
-		width: 100%
-		margin-top: 20px
+	position: relative
 	.focused
-		span, small, mark, sup, sub
-			background-color: #3498db // --- blue
-	h5 mark
-		padding: 2px 10px 0 10px
-	p 
-		text-indent: 20px
-		line-height: 1.28
+		span, mark
+			background-color: #ffcc00 // --- blue
+.reviews_wrapper
+	position: relative
+	width: 100%
+.review_unit
+	padding: 30px 20px
+	background-color: rgba(26, 188, 156, .5)
+	margin: 0 0 0 -50%
+	+position(absolute, 0px null null 50%)
+	height: fit-content
+	display: none
+	&.active_review
+		display: block
+.review_face
+	float: left
+	img
+		max-width: 150px
+		border: 3px solid #fff
+		border-radius: 50%
+		margin: 20px 40px 20px 20px
+.review_content
+	font-size: 18px
+	line-height: 26px
+	text-indent: 20px
+	strong
+		display: block
+		text-transform: uppercase
+	em 
+		padding-left: 20px
+	p
+		margin-top: 10px
 .review_controls
-	margin-top: 100px
-	.arrow_down,.arrow_up
-		font-size: 48px
-		padding: 20px 8px
-		position: relative
-		color: #ededed
-		transition: all .25s ease-in-out
-		background-color: #3498db
-		box-shadow: 0 0 5px rgba(0,0,0,0.5)
-		&:hover,&:focus
-			color: #fff
-			box-shadow: 0 0 2px rgba(0,0,0,0.5)
-
-
+	+position(absolute, 0px 0px 0px 0px)
+	height: fill-available
+	.review_control_prev
+		+position(absolute, 205px null null -50px)
+		&:hover
+			cursor: pointer
+	.review_control_next
+		+position(absolute, 205px -50px null null)
+		&:hover
+			cursor: pointer
+	.fa
+		font-size: 44px
+		background-color: rgba(26, 188, 156, .5)
+	.fa-angle-left
+		padding: 0 11px 4px 8px
+	.fa-angle-right
+		padding: 0 8px 4px 11px
 
 // --------- FIFTH SECTION --------- //	
 .contact_us
@@ -382,6 +405,9 @@ header
 		image: url("../image/footer_bg.jpg")
 		repeat: no-repeat
 		size: cover
+	.form-group
+		width: 50%
+		float: left
 
 
 
