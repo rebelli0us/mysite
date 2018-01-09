@@ -1,9 +1,5 @@
-$(document).ready(function() {
-	$('.review_unit').first().addClass('active_review');
-
-});
-
 $(document).ready(function(){
+	$('.review_unit').first().addClass('active_review');
 
 	$('.review_control_next').click(function(){
 		var currentReview = $('.active_review');

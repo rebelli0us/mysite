@@ -316,8 +316,10 @@ header
 		size: cover
 
 	.focused
-		span, small, mark
-			background-color: #1abc9c // --- green
+		span
+			background-color: rgba(26, 188, 156, .75) // --- green
+		small, mark
+			background-color: transparent
 	small
 		color: #ededed
 	sup
@@ -346,8 +348,10 @@ header
 	min-height: 500px
 	position: relative
 	.focused
-		span, mark
-			background-color: #ffcc00 // --- blue
+		span
+			background-color: rgba(26, 188, 156, .75)
+		mark
+			background-color: transparent
 .reviews_wrapper
 	position: relative
 	width: 100%
@@ -380,18 +384,23 @@ header
 		margin-top: 10px
 .review_controls
 	+position(absolute, 0px 0px 0px 0px)
-	height: fill-available
+	height: stretch
 	.review_control_prev
 		+position(absolute, 205px null null -50px)
 		&:hover
 			cursor: pointer
+			.fa
+				background-color: rgba(26, 188, 156, 1)
 	.review_control_next
 		+position(absolute, 205px -50px null null)
 		&:hover
 			cursor: pointer
+			.fa
+				background-color: rgba(26, 188, 156, 1)
 	.fa
 		font-size: 44px
 		background-color: rgba(26, 188, 156, .5)
+		transition: all .25s ease-in-out
 	.fa-angle-left
 		padding: 0 11px 4px 8px
 	.fa-angle-right
@@ -399,16 +408,74 @@ header
 
 // --------- FIFTH SECTION --------- //	
 .contact_us
-	height: fit-content
+	height: stretch
 	background:
 		color: #b8959b
 		image: url("../image/footer_bg.jpg")
 		repeat: no-repeat
 		size: cover
+	padding-bottom: 20px
+	.focused
+		span
+			background: rgba(255, 204, 0, .75)
 	.form-group
-		width: 50%
+		width: 49%
 		float: left
-
+		margin-right: 2%
+		textarea
+			min-height: 189px
+			resize: none
+	input
+		width: 49%
+		margin-bottom: 20px
+		height: 50px
+	.form-control
+		border: none
+		box-shadow: none
+		border-radius: 0
+		background: rgba(255, 204, 0, .75)
+		color: #fff
+		font-size: 24px
+		font-family: MyriadSetProThin, sans-serif
+		transition: all .25s ease-in-out
+		&::placeholder
+			color: #fff
+		&:hover,&:focus
+			background: rgba(255, 204, 0, 1)
+	button
+		border: none
+		border-radius: 0
+		background: rgba(255, 204, 0, .75)
+		font-size: 24px
+		font-family: MyriadSetProThin, sans-serif
+		padding: 7px 20px
+		width: 49%
+		transition: all .25s ease-in-out
+		outline: none
+		&:hover,&:focus
+			background: rgba(255, 204, 0, 1)
+			outline: none
+	.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover
+		background: rgba(255, 204, 0, 1)
+		outline: none
+footer
+	margin-top: 100px
+	p 
+		font-family: MyriadSetProThin, sans-serif
+	li 
+		list-style: none
+		font-family: MyriadSetProThin, sans-serif
+		a 
+			color: #ededed
+			transition: all .25s ease-in-out
+			&:hover,&:active,&:focus
+				color: #fff
+.footer-title
+	font-size: 110%
+.copyright
+	font-size: 90%
+.footer-email
+	font-size: 150%
 
 
 
