@@ -3,19 +3,19 @@
 	<!-- LANDING SECTION -->
 	<section class="row_wrapper landing">
 		<div class="row">
-			<div class="col-sm-6 iphone_x">
+			<div class="col-sm-6 iphone_x hidden-xs">
 				<img src="catalog/view/theme/mytheme/image/iphone-x.png" title="iphone-x" alt="instagram app" class="img-responsive">
 			</div>
-			<div class="col-sm-5 pull-right">
-				<div class="nav pull-right">
+			<div class="col-sm-6 col-md-6 pull-right">
+				<div class="nav pull-right text-center">
 					<ul class="list-inline">
-						<li><a href="#" class="def_btn">Войти</a></li>
-						<li><a href="#" class="def_btn">Регистрация</a></li>
+						<li><a href="#" class="def_btn sm_btn">Войти</a></li>
+						<li><a href="#" class="def_btn sm_btn">Регистрация</a></li>
 					</ul>
 				</div>
 				<img src="catalog/view/theme/mytheme/image/logo.png" title="locco.me" alt="big logo" class="img-responsive big_logo">
 				<h2 class="focused"><span>Перевод <small>и</small> локализация&nbsp;<br><small>&nbsp;для</small> <mark>instagram, facebook,&nbsp;</mark><br>&nbsp;<mark>twitter, youtube...</mark>&ensp;</span></h2>
-				<div class="pull-right">
+				<div class="pull-right cta_wrapper">
 					<p class="cta_text text-center">пробная подпискa<br>на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
 					<a href="#" class="def_btn big_btn">Активировать</a>
 				</div>
@@ -25,22 +25,22 @@
 	<!-- HOW IT WORKS SECTION -->
 	<section class="row_wrapper about_us">
 		<div class="row">
-			<div class="col-sm-3">
+			<div class="col-sm-6 col-md-3">
 				<span class="num">1.</span>
 				<h4>Активируй подходящую подписку.</h4>
 				<p>Выбирай, сколько и что переводить/локализировать на популярные иностранные языки и подписывайся на сервис.</p>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-6 col-md-3">
 				<span class="num">2.</span>
 				<h4>Что нужно преводить и на какой язык.</h4>
 				<p>Укажи аккаунты из социальных сетей, переводы которых ты хочешь читать или закажи локализацию аккаунта из любой социальной сети.</p>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-6 col-md-3">
 				<span class="num">3.</span>
 				<h4>Лови качественный перевод.</h4>
 				<p>Получай проверенный перевод удобным способом в директ, на почту или в мессенджере.</p>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-6 col-md-3">
 				<span class="num">4.</span>
 				<h4>Делись переводом и получай подписчиков.</h4>
 				<p>Добавляй перевод к своим постам в социальный медиа и получай зарубежных фоловеров по всему миру.</p>
@@ -48,18 +48,18 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12 ipad_wrapper">
-				<img src="catalog/view/theme/mytheme/image/ipad.png" alt="apple ipad" class="img-responsive ipad_image" >
+				<img src="catalog/view/theme/mytheme/image/ipad.png" alt="apple ipad" class="hidden-xs img-responsive ipad_image" >
 				<h2 class="focused">&ensp;<span>Узнай <small>как</small> работает <mark>locco</mark>.me&nbsp;<br>&nbsp;- первый <mark>сервис-переводчик</mark>&ensp;<br>&nbsp;<small>для</small> <mark>социальных сетей</mark></span></h3>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-3">
+			<div class="col-xs-12 col-md-3 cta_wrapper">
 				<p class="cta_text text-center">Оформляй пробную<br>подписку на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
-				<li><a href="#" class="def_btn big_btn">Активировать</a></li>
+				<a href="#" class="def_btn big_btn">Активировать</a>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-xs-12 col-md-3 cta_wrapper">
 				<p class="cta_text text-center">или активируй<br>подходящий для<br>твоих нужд план</p>
-				<li><a href="#" class="def_btn big_btn">Все планы</a></li>
+				<a href="#" class="def_btn big_btn">Все планы</a>
 			</div>
 		</div>		
 	</section>
@@ -162,7 +162,7 @@
 	<!-- CONTACT SECTION -->
 	<section class="row_wrapper contact_us">
 		<div class="row">
-			<div class="col-sm-9 col-sm-offset-1">
+			<div class="col-sm-10 col-sm-offset-1">
 			<div id="ask-us" class="ask-us-form">
 				<h3 class="text-center focused"><span>Связаться с нами</span></h3>  
 				<form class="ajax-form">      

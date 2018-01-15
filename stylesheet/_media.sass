@@ -41,23 +41,52 @@
 		transform: translateX(-13px)
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.ipad_wrapper
+		.ipad_image 
+			right: 0
+			width: 50%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
-
+	.landing
+		height: auto
+		padding-bottom: 20px
+	.focused
+		font-size: 28px
+	.big_btn
+		font-size: 24px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.landing
-		height: auto
-
-
+		min-height: auto
+		.row
+			margin-top: 0
+	.about_us
+		.cta_wrapper
+			margin-top: 40px
+	.big_btn
+		max-width: 250px
+		margin: auto
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+	.focused
+		font-size: 23px
+		span
+			padding: 5px 7px
+	.sm_btn
+		font-size: 16px
+		padding: 7px 15px
+	.landing
+		.pull-right
+			float: none!important
+		.big_logo
+			margin-top: 20px
+	.about_us
+		.focused
+			margin-bottom: 0
+	.for_whom
+		p 
+			padding: 0 10px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
