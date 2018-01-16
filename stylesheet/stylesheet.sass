@@ -336,7 +336,6 @@ header
 
 // --------- FOURTH SECTION --------- //
 .testimonials
-	height: fit-content
 	background:
 		color: #fcecc9
 		image: url("../image/testimonials_bg.jpg")
@@ -350,29 +349,34 @@ header
 			background-color: rgba(26, 188, 156, .75)
 		mark
 			background-color: transparent
-.reviews_wrapper
-	position: relative
-	width: 100%
+	.owl-carousel
+		background-color: transparent
+	.owl-theme .owl-dots .owl-dot
+		span
+			background: rgba(26, 188, 156, .35)
+			width: 13px
+			height: 13px
+			transition: all .25s ease-in-out
+			margin: 5px 5px
+			&:hover
+				background: rgba(26, 188, 156, 1)
+	.owl-theme .owl-dots .owl-dot.active span
+		background: rgba(26, 188, 156, 1)
 .review_unit
-	padding: 30px 20px
 	background-color: rgba(26, 188, 156, .65)
-	margin: 0 0 0 -50%
-	+position(absolute, 0px null null 50%)
-	height: fit-content
-	display: none
-	&.active_review
-		display: block
 .review_face
 	float: left
+	margin: 40px
 	img
 		max-width: 150px
 		border: 3px solid #fff
 		border-radius: 50%
-		margin: 20px 40px 20px 20px
 .review_content
 	font-size: 18px
 	line-height: 26px
 	text-indent: 20px
+	min-height: 230px
+	padding: 30px
 	strong
 		display: block
 		text-transform: uppercase
@@ -380,33 +384,9 @@ header
 		padding-left: 20px
 	p
 		margin-top: 10px
-.review_controls
-	+position(absolute, 0px 0px 0px 0px)
-	height: stretch
-	.review_control_prev
-		+position(absolute, 205px null null -50px)
-		&:hover
-			cursor: pointer
-			.fa
-				background-color: rgba(26, 188, 156, 1)
-	.review_control_next
-		+position(absolute, 205px -50px null null)
-		&:hover
-			cursor: pointer
-			.fa
-				background-color: rgba(26, 188, 156, 1)
-	.fa
-		font-size: 44px
-		background-color: rgba(26, 188, 156, .75)
-		transition: all .25s ease-in-out
-	.fa-angle-left
-		padding: 0 11px 4px 8px
-	.fa-angle-right
-		padding: 0 8px 4px 11px
 
 // --------- FIFTH SECTION --------- //	
 .contact_us
-	// height: stretch
 	background:
 		color: #b8959b
 		image: url("../image/footer_bg.jpg")
@@ -468,6 +448,8 @@ footer
 			transition: all .25s ease-in-out
 			&:hover,&:active,&:focus
 				color: #fff
+	ul 
+		padding-left: 0 
 .footer-title
 	font-size: 110%
 .copyright

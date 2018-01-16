@@ -53,11 +53,11 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-md-3 cta_wrapper">
+			<div class="col-md-3 col-sm-4 cta_wrapper">
 				<p class="cta_text text-center">Оформляй пробную<br>подписку на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
 				<a href="#" class="def_btn big_btn">Активировать</a>
 			</div>
-			<div class="col-xs-12 col-md-3 cta_wrapper">
+			<div class="col-md-3 col-sm-4 cta_wrapper">
 				<p class="cta_text text-center">или активируй<br>подходящий для<br>твоих нужд план</p>
 				<a href="#" class="def_btn big_btn">Все планы</a>
 			</div>
@@ -100,15 +100,11 @@
 	<!-- REVIEWS SECTION -->
 	<section class="row_wrapper testimonials">
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-sm-10 col-sm-offset-1">
 				<h3 class="focused text-center"><span>Отзывы о сервисe <mark>locco</mark>.me</span></h3>
-				<div class="review_controls">
-					<div class="review_control_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-					<div class="review_control_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-				</div>
-				<div class="reviews_wrapper">
+				<div id="slider_container" class="reviews_wrapper owl-theme owl-carousel">
 					<div class="review_unit">
-						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(6).jpg" alt="review_face"></div>
+						<div class="review_face"><img src="catalog/view/theme/mytheme/image/client(6).jpg" alt="client picture"></div>
 						<div class="review_content">
 							<strong class="review_name">Макс Соколов</strong>
 							<em class="review_title">Владелец товарного бизнеса</em>
@@ -120,7 +116,7 @@
 						<div class="review_content">
 							<strong class="review_name">Виктор Ушаков</strong>
 							<em class="review_title">Блогер</em>
-							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat quos obcaecati harum, consequatur laborum tempora itaque quod dignissimos quas eligendi, illo excepturi, pariatur cumque veniam beatae et dolorum voluptatem.»</p>
+							<p>«Я очень доволен локализацией интсграм аккаунта моего бизнеса на английский язык. Действительно могу рекомендовать всем! Появились зарубежные клиенты в бизнесе, увеличились продажи и прибыль. Спасибо сервису locco.me за качественные и быстрые услуги!»</p>
 						</div>
 					</div>
 					<div class="review_unit">
@@ -128,7 +124,7 @@
 						<div class="review_content">
 							<strong class="review_name">Диана Шевченко</strong>
 							<em class="review_title">Бьюти-блогер</em>
-							<p>«Lorem ipsum dolor sit amet, architecto repellendus dolor atque ducimus suscipit velit nihil, fugit perferendis quaerat inventore consectetur adipisicing elit. Eveniet voluptate obcaecati ut assumenda!»</p>
+							<p>«Я очень доволен локализацией интсграм аккаунта моего бизнеса на английский язык. Действительно могу рекомендовать всем! Появились зарубежные клиенты в бизнесе, увеличились продажи и прибыль. Спасибо сервису locco.me за качественные и быстрые услуги!»</p>
 						</div>
 					</div>
 					<div class="review_unit">
@@ -136,7 +132,7 @@
 						<div class="review_content">
 							<strong class="review_name">Илона Д.</strong>
 							<em class="review_title">YouTube блогер и ведущая</em>
-							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi hic earum voluptas unde omnis, nobis beatae molestias quasi dolorem totam dolore!»</p>
+							<p>«Я очень доволен локализацией интсграм аккаунта моего бизнеса на английский язык. Действительно могу рекомендовать всем! Появились зарубежные клиенты в бизнесе, увеличились продажи и прибыль. Спасибо сервису locco.me за качественные и быстрые услуги!»</p>
 						</div>
 					</div>
 					<div class="review_unit">
@@ -144,7 +140,7 @@
 						<div class="review_content">
 							<strong class="review_name">Игорь Леонидович</strong>
 							<em class="review_title">Бизнесс-тренер, блогер</em>
-							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non error cupiditate nam amet. Eos culpa quasi repellendus voluptatum inventore iure consequuntur cum, molestias sit porro, ex, sequi eius, corporis! A.»</p>
+							<p>«Я очень доволен локализацией интсграм аккаунта моего бизнеса на английский язык. Действительно могу рекомендовать всем! Появились зарубежные клиенты в бизнесе, увеличились продажи и прибыль. Спасибо сервису locco.me за качественные и быстрые услуги!»</p>
 						</div>
 					</div>
 					<div class="review_unit">
@@ -152,7 +148,7 @@
 						<div class="review_content">
 							<strong class="review_name">Сергей Клоков</strong>
 							<em class="review_title">Владелец ресторанного бизнеса</em>
-							<p>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores magni pariatur numquam doloremque dolorem qui mollitia enim ad rerum, laudantium, perferendis quibusdam voluptas accusantium vel quam maxime necessitatibus fugiat vero.»</p>
+							<p>«Я очень доволен локализацией интсграм аккаунта моего бизнеса на английский язык. Действительно могу рекомендовать всем! Появились зарубежные клиенты в бизнесе, увеличились продажи и прибыль. Спасибо сервису locco.me за качественные и быстрые услуги!»</p>
 						</div>
 					</div>
 				</div>				
