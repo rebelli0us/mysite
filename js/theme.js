@@ -4,8 +4,8 @@ $(document).ready(function(){
 		animateIn: 'zoomInRight',
 		items:1,
 		loop:true,
-		// autoplay:true,
-		// autoplayTimeout:5000,
+		autoplay:true,
+		autoplayTimeout:5000,
 		autoplayHoverPause:true,		
 		autoHeight:true
 	});
