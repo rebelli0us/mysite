@@ -9,9 +9,9 @@
 		padding-top: 30px
 		width: 170px
 		left: -110px
-		&:hover
-			.follow-us
-				transform: translateX(20px)
+		// &:hover
+		// 	.follow-us
+		// 		transform: translateX(20px)
 	.logo_wrapper
 		margin-bottom: 20px
 		.logo_sm
@@ -64,6 +64,10 @@
 		font-size: 24px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.main-container
+		padding:
+			right: 0
+			left: 0
 	.landing
 		min-height: auto
 		.row
@@ -121,30 +125,46 @@
 	header
 		width: 50%
 		left: -50%
-		margin-left: 60px
-		&:hover
-			margin-left: 0
-			.logo_wrapper
-				span
-					background-position-x: center
-					transform: translateX(0)
-			.social_nav
-				transform: translateX(0)
-			.nav_wrapper
-				.site_nav
-					transform: translateX(0)
-			.follow-us
-				transform: translateX(0)
-				margin: auto
-				font-size: 20px
+		overflow: visible
 	.logo_wrapper
 		span
 			transform: translateX(0)
 			margin-left: 0
+		.logo_sm
+			display: none
 	.nav_wrapper	
+		.toggle_btn
+			right: -36px
+			top: 30px
 		.site_nav
 			font-size: 22px
 			line-height: 1.5em
+	.toggled_header
+		left: 0px
+		margin-left: 0
+		.logo_wrapper
+			span
+				background-position-x: center
+				transform: translateX(0)
+		.social_nav
+			transform: translateX(0)
+		.nav_wrapper
+			.toggle_btn
+				right: 0
+				span 
+					background-color: transparent
+					&:before
+						top: 0
+						transform: rotate(45deg)
+					&:after
+						top: 0
+						transform: rotate(-45deg)
+			.site_nav
+				transform: translateX(0)
+		.follow-us
+			transform: translateX(0)
+			margin: auto
+			font-size: 20px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -174,9 +194,8 @@
 	.review_content
 		padding: 20px 15px 20px 15px
 	header
-		width: 95%
-		left: -95%
-		margin-left: 60px
+		width: 100%
+		left: -100%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -195,8 +214,23 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+@media only screen and (min-width : 769px)
+	header
+		overflow: hidden
+		&:hover
+			left: 0px
+			.logo_wrapper
+				.logo_sm
+					transform: translateX(100px)
+				span
+					transform: translateX(10px)
+			.nav_wrapper
+				.toggle_btn
+					transform: translateX(100px)
+				.site_nav
+					transform: translateX(-18px)
+			.follow-us
+				transform: translateX(20px)
 
 
 /* Medium Devices, Desktops */

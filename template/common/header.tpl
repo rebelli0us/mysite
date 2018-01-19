@@ -43,11 +43,11 @@
 <body class="<?php echo $class; ?>">
   <header>
     <div class="logo_wrapper">
-      <a class="logo_sm" href="#"><h1>locco.me - переводчик для instagram, facebook, twitter, youtube</h1></a>
+      <a class="logo_sm" href="#top_section"><h1>locco.me - переводчик для instagram, facebook, twitter, youtube</h1></a>
       <span></span>
     </div>
     <div class="nav_wrapper">
-      <span></span>
+      <a class="toggle_btn"><span></span></a>
       <nav class="site_nav">
         <li><a href="#">О Проекте</a></li>
         <li><a href="#">Тарифы</a></li>

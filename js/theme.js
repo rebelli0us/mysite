@@ -9,4 +9,11 @@ $(document).ready(function(){
 		autoplayHoverPause:true,		
 		autoHeight:true
 	});
+	$(".toggle_btn").click(function(){
+		$("header").toggleClass("toggled_header");
+	});
+	$(".logo_sm").click(function (){
+		$('body').animate({'scrollTop': 0}, 1000);
+		$('html').animate({'scrollTop': 0}, 1000);
+	});
 });

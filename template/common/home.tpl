@@ -1,7 +1,7 @@
 <?php echo $header; ?>
 <div class="container main-container">
 	<!-- LANDING SECTION -->
-	<section class="row_wrapper landing">
+	<section id="top_section" class="row_wrapper landing">
 		<div class="row">
 			<div class="col-sm-6 iphone_x hidden-xs">
 				<img src="catalog/view/theme/mytheme/image/iphone-x.png" title="iphone-x" alt="instagram app" class="img-responsive">

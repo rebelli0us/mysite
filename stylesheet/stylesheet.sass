@@ -34,21 +34,34 @@ header
 	box-shadow: 0 0 50px rgba(0,0,0,0.5)
 	transition: all .25s ease-in-out
 	z-index: 10000
-	&:hover
-		left: 0px
-		.logo_wrapper
-			.logo_sm
-				transform: translateX(100px)
-			span
-				transform: translateX(10px)
-		.nav_wrapper
-			span
-				transform: translateX(100px)
-			.site_nav
-				transform: translateX(-18px)
-		.follow-us
-			transform: translateX(20px)
-
+	// &:hover
+	// 	left: 0px
+	// 	.logo_wrapper
+	// 		.logo_sm
+	// 			transform: translateX(100px)
+	// 		span
+	// 			transform: translateX(10px)
+	// 	.nav_wrapper
+	// 		span
+	// 			transform: translateX(100px)
+	// 		.site_nav
+	// 			transform: translateX(-18px)
+	// 	.follow-us
+	// 		transform: translateX(20px)
+// .toggled_header
+// 	left: 0px
+// 	.logo_wrapper
+// 		.logo_sm
+// 			transform: translateX(100px)
+// 		span
+// 			transform: translateX(10px)
+// 	.nav_wrapper
+// 		.toggle_btn
+// 			transform: translateX(-140px)
+// 		.site_nav
+// 			transform: translateX(-18px)
+// 	.follow-us
+// 		transform: translateX(20px)
 .logo_sm
 	display: block
 	background: url("../image/logo-sm.png") no-repeat
@@ -75,33 +88,41 @@ header
 .nav_wrapper
 	text-align: left
 	margin-bottom: 50px
-	span
-		display: block
+	.toggle_btn
+		height: 25px
+		width: 36px
+		padding: 6px
 		position: absolute
-		right: 20px
+		right: 13px
+		cursor: pointer
 		transition: all .25s ease-in-out
 		transition-delay: .1s
-		background-color: #555
-		height: 1px
-		width: 24px
-		margin-top: 16px
-		&:before
-			content: ''
+		box-sizing: border-box
+		z-index: 1000
+		background-color: rgba(255, 204, 0, .65)
+		span
+			display: block
+			position: relative		
+			transition: all .25s ease-in-out
+			transition-delay: .1s
 			background-color: #555
-			position: absolute
 			height: 1px
-			width: 24px
-			top: -6px
-			right: 0
-		&:after
-			content: ''
-			background-color: #555
-			position: absolute
-			height: 1px
-			width: 24px
-			top: 6px
-			right: 0
-
+			width: 100%
+			margin-top: 6px
+			&:before
+				content: ''
+				background-color: #555
+				position: absolute
+				height: 1px
+				width: 100%
+				top: -6px
+			&:after
+				content: ''
+				background-color: #555
+				position: absolute
+				height: 1px
+				width: 100%
+				top: 6px
 .site_nav
 	font-family: MyriadSetProThin, sans-serif
 	font-size: 20px
