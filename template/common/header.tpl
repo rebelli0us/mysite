@@ -66,7 +66,7 @@
         <li class="tw_link"><a href="#"><span>Twitter</span><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li class="lin_link"><a href="#"><span>LinkedIn</span><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         <li class="gp_link"><a href="#"><span>Google+</span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>  
-        <li class="tel_link"><a href="#"><span>Telegram</span><i class="fa fa-telegram" aria-hidden="true"></i></a></li>  
+        <li class="tel_link"><a href="#"><span>Telegram</span><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
       </nav>
     </div>
   </header>

@@ -12,8 +12,17 @@ $(document).ready(function(){
 	$(".toggle_btn").click(function(){
 		$("header").toggleClass("toggled_header");
 	});
-	$(".logo_sm").click(function (){
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 200){
+			$(".scroll_btn").addClass("active_scroll");
+		}
+		else{
+			$(".scroll_btn").removeClass("active_scroll");
+		}
+	});
+	$(".scroll_btn").click(function (){
 		$('body').animate({'scrollTop': 0}, 1000);
 		$('html').animate({'scrollTop': 0}, 1000);
+		return false;
 	});
 });

@@ -176,6 +176,7 @@
 			</div>
 			</div>
 		</div>
+		<a href="#top_section" class="scroll_btn animated"></a>
 		<?php echo $footer; ?>
 	</section>
 </div>
