@@ -1,36 +1,46 @@
 <footer class="main-footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-3">
-				<ul>
-					<li class="footer-title">Связаться с нами:</li>
+			<div class="col-sm-5 first_column">
+				<div class="locco_wrapper">
+					<img src="catalog/view/theme/mytheme/image/logo-full-sm.png" alt="footer logo" class="footer_logo image-responsive">
+					<p>Сервис перевода по запросу для социальных сетей <strong>locco</strong>.me.</p>
+				</div>
+				<div class="payment_methods">
+					<img src="catalog/view/theme/mytheme/image/visa.png" alt="Visa" class="image-responsive">
+					<img src="catalog/view/theme/mytheme/image/mastercard.png" alt="MasterCard" class="mastercard image-responsive">
+					<p>К оплате принимаются международные платежные карты систем Visa и MasterCard любого банка</p>
+				</div>					
+			</div>
+			<div class="col-sm-4 second_column">
+				<ul class="footer_cotact">
+					<li class="footer-title first-title">Связаться с нами:</li>
 					<li class="footer-email"><a href="mailto:hello@locco.me">hello@locco.me</a></li>
-					<li class="footer-phone">т. +380123456789</li>
+				</ul>
+				<ul>
+					<li class="footer-title">FAQ:</li>
+					<li><a href="http://locco.me/chto-takoe-lokalizaciya">Что такое локализация?</a></li>
+					<li><a href="http://locco.me/chto-takoe-perevod-po-zaporosu">Что такое перевод по запоросу?</a></li>
+					<li><a href="http://locco.me/kak-oformit-podpisku-na-servis">Как оформить подписку на сервис?</a></li>
+					<li><a href="http://locco.me/kak-oplatit-uslugu">Как оплатить услугу?</a></li>
+					<li><a href="http://locco.me/kto-delaet-perevod">Кто делает перевод?</a></li>
+					<li><a href="http://locco.me/na-kakie-yazyki-est-perevod">На какие языки есть перевод?</a></li>
+					<li><a href="http://locco.me/kak-popast-v-komandu-locco-me">Как попасть в команду locco.me?</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-3">
 				<ul>
 					<li class="footer-title">Полезные ссылки:</li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
+					<?php foreach ($informations as $information) { ?>
+					<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+					<?php } ?>
+					<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></li>
 					<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
 					<li><a href="<?php echo $sitemap; ?>">Карта сайтa</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-3">
-				<ul>
-					<li class="footer-title">FAQ:</li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-3 location">
-				<p>ТОВ "Локко-ми", ЕГРПОУ: 10000000, Адрес: 00033, г. Киев,<br>ул. Васильковская, 14, 3 этаж.</p>				
-			</div>
 		</div>
-		<p class="copyright text-center">© 2017 locco.me - Cервис переводчик для социальных сетей | Все права защищены</p>
+		<p class="copyright text-center">© 2017 locco.me - Cервис переводчик для социальных сетей | Все права защищены | ТОВ "Локко-ми", ЕГРПОУ: 10000000</p>
 	</div>
 </footer>
 

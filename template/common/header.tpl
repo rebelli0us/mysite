@@ -43,30 +43,30 @@
 <body class="<?php echo $class; ?>">
   <header>
     <div class="logo_wrapper">
-      <a class="logo_sm" href="#top_section"><h1>locco.me - переводчик для instagram, facebook, twitter, youtube</h1></a>
-      <span></span>
+      <div class="logo_sm"><h1><?php echo $name; ?></h1></div>
+      <span><a href="<?php echo $home; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>"></a></span>
     </div>
     <div class="nav_wrapper">
       <a class="toggle_btn"><span></span></a>
       <nav class="site_nav">
-        <li><a href="#">О Проекте</a></li>
-        <li><a href="#">Тарифы</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Блогго</a></li>
-        <li><a href="#">Личный Кабинет</a></li>
+        <li><a href="http://locco.me/about-locco/">О проекте</a></li>
+        <li><a href="http://locco.me/prices/">Планы подписки</a></li>
+        <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+        <li><a href="http://locco.me/about-us/">Блогго</a></li>
+        <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
       </nav>
     </div>
     <div class="social_nav_wrapper">
       <span class="follow-us">Следите за нами в:</span>
       <nav class="social_nav">
-        <li class="fb_link"><a href="#"><span>Facebook</span><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li class="vk_link"><a href="#"><span>ВКонтакте</span><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-        <li class="ins_link"><a href="#"><span>Instagram</span><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li class="you_link"><a href="#"><span>YouTube</span><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-        <li class="tw_link"><a href="#"><span>Twitter</span><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li class="lin_link"><a href="#"><span>LinkedIn</span><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li class="gp_link"><a href="#"><span>Google+</span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>  
-        <li class="tel_link"><a href="#"><span>Telegram</span><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+        <li class="fb_link"><a href="#" rel="nofollow" target="_blank"><span>Facebook</span><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="vk_link"><a href="#" rel="nofollow" target="_blank"><span>ВКонтакте</span><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+        <li class="ins_link"><a href="#" rel="nofollow" target="_blank"><span>Instagram</span><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li class="you_link"><a href="#" rel="nofollow" target="_blank"><span>YouTube</span><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+<!--         <li class="tw_link"><a href="#" rel="nofollow" target="_blank"><span>Twitter</span><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="lin_link"><a href="#" rel="nofollow" target="_blank"><span>LinkedIn</span><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="gp_link"><a href="#" rel="nofollow" target="_blank"><span>Google+</span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>  
+        <li class="tel_link"><a href="#" rel="nofollow" target="_blank"><span>Telegram</span><i class="fa fa-telegram" aria-hidden="true"></i></a></li> -->
       </nav>
     </div>
   </header>

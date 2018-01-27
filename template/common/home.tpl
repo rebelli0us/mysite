@@ -9,8 +9,12 @@
 			<div class="col-sm-6 col-md-6 pull-right">
 				<div class="nav pull-right text-center">
 					<ul class="list-inline">
-						<li><a href="#" class="def_btn sm_btn">Войти</a></li>
-						<li><a href="#" class="def_btn sm_btn">Регистрация</a></li>
+						<?php if ($logged) { ?>
+						<li><a href="<?php echo $logout; ?>" class="def_btn sm_btn"><?php echo $text_logout; ?></a></li>
+						<?php } else { ?>
+						<li><a href="<?php echo $login; ?>" class="def_btn sm_btn"><?php echo $text_login; ?></a></li>
+						<li><a href="<?php echo $register; ?>" class="def_btn sm_btn"><?php echo $text_register; ?></a></li>
+						<?php } ?>
 					</ul>
 				</div>
 				<img src="catalog/view/theme/mytheme/image/logo.png" title="locco.me" alt="big logo" class="img-responsive big_logo">
