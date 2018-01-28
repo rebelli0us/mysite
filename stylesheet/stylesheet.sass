@@ -124,6 +124,10 @@ header
 	transition: all .25s ease-in-out
 	transition-delay: .1s
 	width: fit-content
+.social_nav_wrapper
+	position: absolute
+	width: 100%
+	bottom: 20px
 .social_nav
 	text-align: right
 	.fa
@@ -448,7 +452,7 @@ footer
 		list-style: none
 		font-family: MyriadSetProThin, sans-serif
 		a 
-			color: #ededed
+			color: #fff
 			transition: all .25s ease-in-out
 			&:hover,&:active,&:focus
 				color: rgba(255, 204, 0, 1)
@@ -456,25 +460,39 @@ footer
 	ul 
 		padding-left: 0
 	.footer_logo
+		display: block		
 		float: left
-	.payment_methods
+		width: 50%
+		max-width: 190px
+		margin-right: 10px
+		height: 42px
+		background:
+			image: url("../image/strokes-sm.png")
+			repeat: no-repeat
+			size: contain
+	.methods_wrapper
+		width: 50%
+		max-width: 190px
+		float: left
+		text-align: center
+		margin-right: 10px
+		height: 60px
 		img
-			float: left
-			padding: 10px
+			display: inline-block
+			padding: 0 7px
 	.first_column
+		border-right: 1px solid #ededed
 		p
-			left: 10px
-			position: relative
 			font-size: 14px
-	.second_column
-		border-left: 1px solid #ededed
-.footer_cotact
-	margin-bottom: 0
+			color: #fff		
 .locco_wrapper
 	margin:
-		bottom: 40px
-		top: 40px
-
+		top: 10px
+		bottom: 20px
+.footer_contact
+	margin:
+		left: 200px
+		bottom: 0
 .footer-title
 	font-size: 110%
 	border-bottom: 1px solid rgba(255, 204, 0, 1)
@@ -484,9 +502,9 @@ footer
 .first-title
 	margin-bottom: 3px
 .copyright
-	font-size: 90%
+	font-size: 14px
 .footer-email
-	font-size: 240%
+	font-size: 200%
 	a
 		&:hover
 			text-decoration: none

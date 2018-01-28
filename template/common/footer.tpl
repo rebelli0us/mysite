@@ -1,22 +1,36 @@
 <footer class="main-footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-5 first_column">
-				<div class="locco_wrapper">
-					<img src="catalog/view/theme/mytheme/image/logo-full-sm.png" alt="footer logo" class="footer_logo image-responsive">
-					<p>Сервис перевода по запросу для социальных сетей <strong>locco</strong>.me.</p>
-				</div>
-				<div class="payment_methods">
-					<img src="catalog/view/theme/mytheme/image/visa.png" alt="Visa" class="image-responsive">
-					<img src="catalog/view/theme/mytheme/image/mastercard.png" alt="MasterCard" class="mastercard image-responsive">
-					<p>К оплате принимаются международные платежные карты систем Visa и MasterCard любого банка</p>
-				</div>					
-			</div>
-			<div class="col-sm-4 second_column">
-				<ul class="footer_cotact">
+			<div class="col-sm-6 first_column">
+				<ul class="footer_contact">
 					<li class="footer-title first-title">Связаться с нами:</li>
 					<li class="footer-email"><a href="mailto:hello@locco.me">hello@locco.me</a></li>
 				</ul>
+				<div class="locco_wrapper">
+					<span class="footer_logo"></span>
+					<p>Сервис перевода по запросу для социальных сетей <strong>locco</strong>.me.</p>
+				</div>
+				<div class="payment_methods">
+					<div class="methods_wrapper">
+						<img src="catalog/view/theme/mytheme/image/visa.png" alt="Visa" class="visa_card img-responsive">
+						<img src="catalog/view/theme/mytheme/image/mastercard.png" alt="MasterCard" class="mastercard img-responsive">
+					</div>
+					<p>К оплате принимаются международные платежные карты систем Visa и MasterCard любого банка</p>
+				</div>					
+			</div>
+			<div class="col-sm-3">
+				
+				<ul>
+					<li class="footer-title">Полезные ссылки:</li>
+					<?php foreach ($informations as $information) { ?>
+					<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+					<?php } ?>
+					<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></li>
+					<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+					<li><a href="<?php echo $sitemap; ?>">Карта сайтa</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">				
 				<ul>
 					<li class="footer-title">FAQ:</li>
 					<li><a href="http://locco.me/chto-takoe-lokalizaciya">Что такое локализация?</a></li>
@@ -28,19 +42,8 @@
 					<li><a href="http://locco.me/kak-popast-v-komandu-locco-me">Как попасть в команду locco.me?</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-3">
-				<ul>
-					<li class="footer-title">Полезные ссылки:</li>
-					<?php foreach ($informations as $information) { ?>
-					<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
-					<?php } ?>
-					<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></li>
-					<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-					<li><a href="<?php echo $sitemap; ?>">Карта сайтa</a></li>
-				</ul>
-			</div>
 		</div>
-		<p class="copyright text-center">© 2017 locco.me - Cервис переводчик для социальных сетей | Все права защищены | ТОВ "Локко-ми", ЕГРПОУ: 10000000</p>
+		<p class="copyright text-center">© 2017 locco.me - Cервис переводчик для социальных сетей | Все права защищены</p>
 	</div>
 </footer>
 
