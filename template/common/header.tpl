@@ -52,7 +52,7 @@
         <li><a href="http://locco.me/about-locco/">О проекте</a></li>
         <li><a href="http://locco.me/prices/">Планы подписки</a></li>
         <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-        <li><a href="http://locco.me/about-us/">Блогго</a></li>
+        <li><a href="http://locco.me/bloggo/">Блогго</a></li>
         <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
       </nav>
     </div>

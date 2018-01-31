@@ -45,7 +45,7 @@
 			width: 64%
 		input 
 			width: 34%
-		button
+		.btn-primary
 			width: 34%
 
 /* Medium Devices, Desktops */
@@ -100,7 +100,7 @@
 			width: 100%
 		input 
 			width: 100%
-		button
+		.btn-primary
 			width: 100%
 	.review_face
 		position: unset
@@ -154,6 +154,7 @@
 			top: 23px
 			width: 45px
 			height: 45px
+			box-shadow: 0 0 2px rgba(0,0,0,0.5)
 			span
 				margin-top: 16px
 				&:before
@@ -175,6 +176,8 @@
 		.nav_wrapper
 			.toggle_btn
 				right: 0
+				background-color: rgba(255,204,0, 1)
+				box-shadow: 0 0 1px rgba(0,0,0,0.5)
 				span 
 					background-color: transparent
 					&:before
@@ -264,7 +267,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-	/**/
+	header
+		min-height: 600px
 
 
 /* Large Devices, Wide Screens */

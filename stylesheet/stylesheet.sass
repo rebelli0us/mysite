@@ -4,14 +4,14 @@
 
 //Custom styles here
 body
-	background: #ededed
+	background: #fdfdfd
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.4
 	overflow-x: hidden
 	font-family: MyriadSetProText, sans-serif
-
+	color: #555
 nav 
 	list-style-type: none
 	li a
@@ -20,7 +20,8 @@ nav
 			cursor: pointer
 			color: #000
 			text-decoration: none
-
+h1,h2,h3,h4,h5,h6
+	font-family: MyriadSetProThin, sans-serif
 // ----- HEADER ----- // 
 header
 	background: #fff
@@ -175,6 +176,164 @@ header
 		background-color: #0088cc
 
 // ----- MAIN BODY ----- //
+.breadcrumb
+	margin-top: 40px
+	background-color: transparent
+	li
+		a
+			color: #ff9b00
+			transition: all .25s ease-in-out
+			&:hover,&:focus,&:active
+				color: #ff6c00
+a
+	color: #ff9b00
+	font-family: MyriadSetProThin,sans-serif
+	transition: all .25s ease-in-out
+	&:hover,&:focus,&:active
+		color: #ff6c00
+		text-decoration: none
+.list-group-item
+	border: 1px solid #e3e3e3
+	&:first-child
+		border-top-left-radius: 0
+		border-top-right-radius: 0
+	&:last-child
+		border-bottom-left-radius: 0
+		border-bottom-right-radius: 0
+	&:hover,&:focus
+		border-color: rgba(255, 204, 0, .75)
+a.list-group-item, button.list-group-item
+	&:hover,&:focus
+		background-color: rgba(255, 204, 0, .75)
+.panel-default
+	border-color: #ffcc00
+.panel
+	border-radius: 0
+legend
+	color: #555
+	border-bottom: 1px solid #ffcc00
+label
+	font-weight: 500
+.focused
+	span
+		// box-shadow: 0 0 2px rgba(0,0,0,0.5)
+		background-color: #ffcc00
+.text-danger
+	color: #ff681e
+	margin-top: -20px
+	margin-bottom: 10px
+.has-error .form-control
+	border-color: rgba(255, 104, 30, 1)
+	&:focus
+		border-color: rgba(255, 104, 30, 1)
+.btn-primary
+	border: none
+	border-radius: 0
+	font-size: 16px
+	position: relative
+	color: #ededed
+	transition: all .25s ease-in-out
+	background-color: #ff6c00
+	background: linear-gradient(to top, #ff6c00, #ffbc00)
+	box-shadow: 0 0 4px rgba(0,0,0,0.5)
+	font-family: MyriadSetProThin, sans-serif
+	z-index: 1003
+	padding: 8px 20px
+	outline: none
+	&:before
+		content: ''   
+		display: block
+		height: 100%
+		width: 100%
+		position: absolute
+		background: linear-gradient(to top, #ff6c00, #ffcc00)
+		border-radius: inherit
+		top: 0
+		left: 0
+		opacity: 0
+		transition: all .15s ease-in-out
+		z-index: -100
+	&:hover,&:focus,&:active
+		text-decoration: none
+		color: #fff
+		background-color: #ff9b00
+		outline: none
+		border-color: transparent
+		box-shadow: 0 0 2px rgba(0,0,0,0.5)		
+		&:before
+			opacity: 1
+input.btn-primary
+	&:hover,&:focus,&:active
+		text-decoration: none
+		color: #fff
+		background: linear-gradient(to top, #ff6c00, #ffcc00)
+		box-shadow: 0 0 2px rgba(0,0,0,0.5)
+		outline: none
+		border-color: transparent
+.well
+	background-color: #FFF
+	border-radius: 0
+
+.get_in_touch_text
+	span 
+		box-shadow: 0 0 2px rgba(0,0,0,0.5)
+.form-control
+	box-shadow: none
+.get_in_touch
+	textarea.form-control
+		resize: none
+		height: 300px
+		box-shadow: 0 0 2px rgba(0,0,0,0.5)
+		&:focus
+			box-shadow: 0 0 1px rgba(0,0,0,0.5)			
+	.form-control
+		margin-bottom: 30px
+		border:
+				color: rgba(255, 204, 0, 1)
+				radius: 0
+		box-shadow: none
+		background: rgba(255, 204, 0, 1)
+		color: #fff
+		font-size: 24px
+		font-family: MyriadSetProThin, sans-serif
+		transition: all .25s ease-in-out
+		box-shadow: 0 0 2px rgba(0,0,0,0.5)
+		&::placeholder
+			color: #fff
+		&:focus
+			background: rgba(255, 204, 0, .75)
+			// border-color: rgba(255, 204, 0, .75)
+	input
+		height: 50px
+	.btn-primary
+		border: none
+		border-radius: 0
+		background: rgba(255, 204, 0, .85)
+		font-size: 24px
+		font-family: MyriadSetProThin, sans-serif
+		padding: 7px 20px
+		width: 100%
+		transition: all .25s ease-in-out
+		outline: none
+		color: #fff
+		&:hover,&:focus
+			background: rgba(255, 204, 0, 1)
+			box-shadow: 0 0 1px rgba(0,0,0,0.5)
+			outline: none
+			// box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 204, 0, .55)
+	.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover
+		background: rgba(255, 204, 0, 1)
+
+.form-control
+	border:
+		color: rgba(255, 204, 0, .55)
+		radius: 0
+	&:focus
+		border-color: rgba(255, 204, 0, 1)
+		box-shadow: 0 0 1px rgba(0,0,0,0.5)
+		// box-shadow: inset 0 0 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 204, 0, .55)
+
+
 .main-container
 	width: 100vw
 	color: #fff
@@ -204,7 +363,7 @@ header
 	transition: all .25s ease-in-out
 	background-color: #ae44c8
 	background: linear-gradient(to top, #ae44c8, #8657db)
-	box-shadow: 0 0 5px rgba(0,0,0,0.5)
+	box-shadow: 0 0 4px rgba(0,0,0,0.5)
 	font-family: MyriadSetProThin, sans-serif
 	z-index: 1003
 	&:before
@@ -259,7 +418,7 @@ header
 .landing
 	background:
 		color: #7cbcb5
-		image: url("../image/landing_bg.jpg")
+		// image: url("../image/landing_bg.jpg")
 		repeat: no-repeat
 		size: cover
 		position: bottom
@@ -283,7 +442,7 @@ header
 	height: fit-content
 	background:
 		color: #f79885
-		image: url("../image/about_us_bg.jpg")
+		// image: url("../image/about_us_bg.jpg")
 		repeat: no-repeat
 		size: cover
 	h4
@@ -308,7 +467,7 @@ header
 	height: fit-content
 	background:
 		color: #d6e2ce
-		image: url("../image/for_whom_bg.jpg")
+		// image: url("../image/for_whom_bg.jpg")
 		repeat: no-repeat
 		size: cover
 
@@ -338,7 +497,7 @@ header
 .testimonials
 	background:
 		color: #fcecc9
-		image: url("../image/testimonials_bg.jpg")
+		// image: url("../image/testimonials_bg.jpg")
 		repeat: no-repeat
 		size: cover
 		position: center
@@ -397,7 +556,7 @@ header
 .contact_us
 	background:
 		color: #b8959b
-		image: url("../image/footer_bg.jpg")
+		// image: url("../image/footer_bg.jpg")
 		repeat: no-repeat
 		size: cover
 	padding-bottom: 20px
@@ -416,9 +575,9 @@ header
 		margin-bottom: 20px
 		height: 50px
 	.form-control
-		border: none
-		box-shadow: none
-		border-radius: 0
+		border:
+				color: rgba(255, 204, 0, .55)
+				radius: 0
 		background: rgba(255, 204, 0, .85)
 		color: #fff
 		font-size: 24px
@@ -426,9 +585,11 @@ header
 		transition: all .25s ease-in-out
 		&::placeholder
 			color: #fff
-		&:hover,&:focus
+		&:focus
+			border-color: rgba(255, 204, 0, 1)
 			background: rgba(255, 204, 0, 1)
-	button
+			box-shadow: 0 0 1px rgba(0,0,0,0.5)
+	.btn-primary
 		border: none
 		border-radius: 0
 		background: rgba(255, 204, 0, .85)
@@ -438,9 +599,15 @@ header
 		width: 49%
 		transition: all .25s ease-in-out
 		outline: none
-		&:hover,&:focus
+		box-shadow: none
+		color: #fff
+		&:hover,&:focus,&:active
 			background: rgba(255, 204, 0, 1)
 			outline: none
+			box-shadow: 0 0 1px rgba(0,0,0,0.5)
+			&:before
+				opacity: 0
+
 	.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover
 		background: rgba(255, 204, 0, 1)
 		outline: none
@@ -451,11 +618,11 @@ footer
 	li 
 		list-style: none
 		font-family: MyriadSetProThin, sans-serif
-		a 
-			color: #fff
+		a
+			color: #9e9e9e		
 			transition: all .25s ease-in-out
 			&:hover,&:active,&:focus
-				color: rgba(255, 204, 0, 1)
+				color: #ff9b00
 				text-decoration: none
 	ul 
 		padding-left: 0
@@ -467,9 +634,11 @@ footer
 		margin-right: 10px
 		height: 42px
 		background:
-			image: url("../image/strokes-sm.png")
+			image: url("../image/strokes-sm-gr.png")
 			repeat: no-repeat
 			size: contain
+	.payment_methods
+		clear: both
 	.methods_wrapper
 		width: 50%
 		max-width: 190px
@@ -481,14 +650,15 @@ footer
 			display: inline-block
 			padding: 0 7px
 	.first_column
-		border-right: 1px solid #ededed
 		p
 			font-size: 14px
-			color: #fff		
+			color: #9e9e9e	
+	.second_column
+		border-left: 1px solid rgba(255, 204, 0, 1)
 .locco_wrapper
 	margin:
 		top: 10px
-		bottom: 20px
+		bottom: 40px
 .footer_contact
 	margin:
 		left: 200px
@@ -498,23 +668,44 @@ footer
 	border-bottom: 1px solid rgba(255, 204, 0, 1)
 	display: inline-block
 	margin-bottom: 10px
-	color: rgba(255, 204, 0, 1)
+	color: #ff9b00
 .first-title
 	margin-bottom: 3px
 .copyright
+	color: #9e9e9e
 	font-size: 14px
+	margin-top: 40px
 .footer-email
 	font-size: 200%
 	a
 		&:hover
 			text-decoration: none
-			color: rgba(255, 204, 0, 1)
+			color: #ff9b00
+.contact_us
+	footer
+		li
+			a
+				color: #fff
+				&:hover,&:active,&:focus
+					color: #ff9b00
+		.footer-email
+			a
+				&:hover
+					color: #ff9b00
+		.first_column
+			p
+				color: #fff
+		.footer_logo
+			background-image: url("../image/strokes-sm.png")
+		.copyright
+			color: #fff
 .scroll_btn
 	display: block
 	background-color: rgba(255, 204, 0, .65)
 	text-align: center
 	position: fixed
 	bottom: -10%
+	box-shadow: 0 0 2px rgba(0,0,0,0.5)
 	right: 0
 	color: #ededed
 	transition: all .5s ease-in-out
@@ -536,13 +727,54 @@ footer
 		margin: auto
 		transform: rotate(-45deg)
 		transition: border-color .25s ease-in-out
-	&:hover,&:focus
+	&:hover
 		background-color: rgba(255, 204, 0, 1)
-		&:after
-			border-color: #ededed
+		box-shadow: 0 0 1px rgba(0,0,0,0.5)
 .active_scroll
 	bottom: 23px
 	opacity: 1
+
+// ----- BLOG PAGES ----- //
+
+.image-additional
+	max-width: 100px
+	max-height: 100px
+.article_bg
+	height: 70vh
+	width: 100vw
+	position: absolute
+	z-index: -100
+	background:
+		size: cover
+		position: center
+	top: 0
+	left: 0
+	&:after
+		display: block
+		content: ''
+		width: 100%
+		height: 100%
+		background: linear-gradient(to right, rgba(124,188,181,0.9) 0%,rgba(133,201,196,0.85) 34%,rgba(141,214,210,0.7) 68%,rgba(149,226,224,0.3) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67cbcb5', endColorstr='#0095e2e0',GradientType=1 )
+.preview_text
+	margin-top: 15vh
+	height: 65vh
+	color: #fff
+	h1
+		font:
+			family: MyriadProBold, sans-serif
+			size: 48px
+	p
+		background-color: #ffcc00
+		font-family: MyriadSetProSemiBold, sans-serif
+		font-style: italic
+		font-size: 22px
+		padding: 10px
+		line-height: 1.2;
+		text-align: justify
+		width: 65%
+.article_itself
+	text-align: justify
 
 
 

@@ -18,7 +18,7 @@
 					<p>К оплате принимаются международные платежные карты систем Visa и MasterCard любого банка</p>
 				</div>					
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3 second_column">
 				
 				<ul>
 					<li class="footer-title">Полезные ссылки:</li>
@@ -43,7 +43,7 @@
 				</ul>
 			</div>
 		</div>
-		<p class="copyright text-center">© 2017 locco.me - Cервис переводчик для социальных сетей | Все права защищены</p>
+		<p class="copyright">© 2017 locco.me - Cервис переводчик для социальных сетей | Все права защищены</p>
 	</div>
 </footer>
 

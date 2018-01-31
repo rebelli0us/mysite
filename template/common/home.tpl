@@ -10,6 +10,7 @@
 				<div class="nav pull-right text-center">
 					<ul class="list-inline">
 						<?php if ($logged) { ?>
+						<li><a href="<?php echo $account; ?>" class="def_btn sm_btn"><?php echo $text_account; ?></a></li>
 						<li><a href="<?php echo $logout; ?>" class="def_btn sm_btn"><?php echo $text_logout; ?></a></li>
 						<?php } else { ?>
 						<li><a href="<?php echo $login; ?>" class="def_btn sm_btn"><?php echo $text_login; ?></a></li>
