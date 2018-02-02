@@ -12,7 +12,7 @@
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <div class="row">
-        <div class="col-sm-12 preview_text">
+        <div class="col-md-10 col-sm-12 preview_text">
         	<h1 class="focused"><span><?php echo $heading_title; ?></span></h1>
             <?php echo $preview;?>
 
@@ -46,25 +46,17 @@
   	  <h3><?php echo $text_related; ?></h3>
       <div class="row">
         <?php foreach ($articles as $article) { ?>
-        <div class="product-layout product-list col-sm-3">
-          <div class="product-thumb">
-            <div class="image"><a href="<?php echo $article['href']; ?>"><img src="<?php echo $article['thumb']; ?>" alt="<?php echo $article['name']; ?>" title="<?php echo $article['name']; ?>" class="img-responsive" /></a></div>
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition bloggo">
+            <?php if ($article['thumb']) { ?>
+            <div class="image"><a href="<?php echo $article['href']; ?>" style="background-image: url('<?php echo $article['thumb']; ?>')"></a></div>
+            <?php } ?>
             <div class="caption">
-                <h4><a href="<?php echo $article['href']; ?>"><?php echo $article['name']; ?></a></h4>
-                <p><?php echo $article['preview']; ?></p>
-
-                <?php if ($article['attributes']) { ?>
-	                <h5><?php echo $text_attributes;?></h5>
-	                <?php foreach ($article['attributes'] as $attribute_group) { ?>
-	                	<?php foreach ($attribute_group['attribute'] as $attribute_item) { ?>
-                       	<b><?php echo $attribute_item['name'];?>:</b> <?php echo $attribute_item['text'];?><br />
-	                	<?php } ?>
-	                <?php } ?>
-                <?php } ?>
+              <h4><a href="<?php echo $article['href']; ?>"><?php echo $article['name']; ?></a></h4>
+              <?php echo $article['preview']; ?>
             </div>
-          </div>
+          </div>        
         </div>
-        
         <?php } ?>
       </div>
       <?php } ?>

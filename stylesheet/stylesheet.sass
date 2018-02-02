@@ -192,6 +192,7 @@ a
 	&:hover,&:focus,&:active
 		color: #ff6c00
 		text-decoration: none
+		outline: none
 .list-group-item
 	border: 1px solid #e3e3e3
 	&:first-child
@@ -281,8 +282,8 @@ input.btn-primary
 	box-shadow: none
 .get_in_touch
 	textarea.form-control
-		resize: none
-		height: 300px
+		resize: vertical
+		min-height: 211px
 		box-shadow: 0 0 2px rgba(0,0,0,0.5)
 		&:focus
 			box-shadow: 0 0 1px rgba(0,0,0,0.5)			
@@ -302,7 +303,6 @@ input.btn-primary
 			color: #fff
 		&:focus
 			background: rgba(255, 204, 0, .75)
-			// border-color: rgba(255, 204, 0, .75)
 	input
 		height: 50px
 	.btn-primary
@@ -314,13 +314,13 @@ input.btn-primary
 		padding: 7px 20px
 		width: 100%
 		transition: all .25s ease-in-out
+		box-shadow: 0 0 2px rgba(0,0,0,0.5)
 		outline: none
 		color: #fff
 		&:hover,&:focus
 			background: rgba(255, 204, 0, 1)
 			box-shadow: 0 0 1px rgba(0,0,0,0.5)
 			outline: none
-			// box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 204, 0, .55)
 	.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover
 		background: rgba(255, 204, 0, 1)
 
@@ -705,7 +705,7 @@ footer
 	text-align: center
 	position: fixed
 	bottom: -10%
-	box-shadow: 0 0 2px rgba(0,0,0,0.5)
+	box-shadow: 0 0 2px rgba(0,0,0,0.2)
 	right: 0
 	color: #ededed
 	transition: all .5s ease-in-out
@@ -727,9 +727,10 @@ footer
 		margin: auto
 		transform: rotate(-45deg)
 		transition: border-color .25s ease-in-out
-	&:hover
+	&:hover,&:focus
 		background-color: rgba(255, 204, 0, 1)
-		box-shadow: 0 0 1px rgba(0,0,0,0.5)
+		box-shadow: 0 0 1px rgba(0,0,0,0.4)
+		outline: none
 .active_scroll
 	bottom: 23px
 	opacity: 1
@@ -740,7 +741,7 @@ footer
 	max-width: 100px
 	max-height: 100px
 .article_bg
-	height: 70vh
+	height: 60vh
 	width: 100vw
 	position: absolute
 	z-index: -100
@@ -758,7 +759,7 @@ footer
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67cbcb5', endColorstr='#0095e2e0',GradientType=1 )
 .preview_text
 	margin-top: 15vh
-	height: 65vh
+	height: 50vh
 	color: #fff
 	h1
 		font:
@@ -772,10 +773,76 @@ footer
 		padding: 10px
 		line-height: 1.2;
 		text-align: justify
-		width: 65%
 .article_itself
 	text-align: justify
 
+
+// ----- MAIN BLOG PAGE ----- //
+
+.bloggo
+	margin-bottom: 60px
+	border: 1px solid #eee
+	.image
+		width: 100%
+		height: 200px
+		a
+			display: block
+			background:
+				size: cover
+				position: center
+			height: 100%
+			width: 100%
+	.caption
+		height: 200px
+		overflow: hidden
+		margin-bottom: 10px
+		position: relative
+		padding: 20px 15px 30px
+		&:after
+			display: block
+			content: ""
+			height: 40%
+			width: 100%
+			position: absolute
+			bottom: 0
+			left: 0
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.5) 30%, rgba(255,255,255, .95) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 )
+	.button-group
+		padding: 10px 15px 30px
+.category_bg
+	height: 60vh
+	width: 100vw
+	position: absolute
+	z-index: -100
+	background:
+		size: cover
+		position: center
+	top: 0
+	left: 0
+	&:after
+		display: block
+		content: ''
+		width: 100%
+		height: 100%
+		background: linear-gradient(to right, rgba(124,188,181,0.9) 0%,rgba(133,201,196,0.85) 34%,rgba(141,214,210,0.7) 68%,rgba(149,226,224,0.3) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e67cbcb5', endColorstr='#0095e2e0',GradientType=1 )
+.category_desc
+	margin-top: 15vh
+	height: 50vh
+	color: #fff
+	h1
+		font:
+			family: MyriadProBold, sans-serif
+			size: 48px
+	p
+		background-color: #ffcc00
+		font-family: MyriadSetProSemiBold, sans-serif
+		font-style: italic
+		font-size: 22px
+		padding: 10px
+		line-height: 1.2;
+		text-align: center
 
 
 @import "media"

@@ -25,6 +25,7 @@
 					<?php foreach ($informations as $information) { ?>
 					<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
 					<?php } ?>
+					<li><a href="/locco/index.php?route=newsblog/category&newsblog_path=9">Блогго</li>
 					<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></li>
 					<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
 					<li><a href="<?php echo $sitemap; ?>">Карта сайтa</a></li>
@@ -46,8 +47,7 @@
 		<p class="copyright">© 2017 locco.me - Cервис переводчик для социальных сетей | Все права защищены</p>
 	</div>
 </footer>
-
-
+<a href="#top_section" class="scroll_btn animated"></a>
 </body>
 <script src="catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js"></script>
 </html>
