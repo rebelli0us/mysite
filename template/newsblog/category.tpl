@@ -22,38 +22,24 @@
       </div>
       <?php } ?>
       <?php if ($categories) { ?>
-      <!-- <h3><?php echo $text_refine; ?></h3> -->
-      <?php if (count($categories) <= 5) { ?>
       <div class="row">
-        <div class="col-sm-3">
-          <ul>
+        <div class="col-sm-12">
+          <ul class="list-inline text-center blog_categories">
             <?php foreach ($categories as $category) { ?>
             <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
             <?php } ?>
           </ul>
         </div>
       </div>
-      <hr>
-      <?php } else { ?>
-      <div class="row">
-        <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
-        <div class="col-sm-3">
-          <ul>
-            <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-            <?php } ?>
-          </ul>
-        </div>
-        <?php } ?>
-      </div>
-      <?php } ?>
       <?php } ?>
       <?php if ($articles) { ?>
       <div class="row">
         <?php foreach ($articles as $article) { ?>
-        <div class="product-layout product-list col-xs-12">
-          <div class="product-thumb">
-            <?php if ($article['thumb']) { ?><div class="image"><a href="<?php echo $article['href']; ?>"><img src="<?php echo $article['thumb']; ?>" alt="<?php echo $article['name']; ?>" title="<?php echo $article['name']; ?>" class="img-responsive" /></a></div><?php } ?>
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition bloggo">
+            <?php if ($article['thumb']) { ?>
+              <div class="image"><a href="<?php echo $article['href']; ?>" style="background-image: url('<?php echo $article['original']; ?>')"></a></div>
+            <?php } ?>
             <div class="caption">
                 <h4><a href="<?php echo $article['href']; ?>"><?php echo $article['name']; ?></a></h4>
                 <p><?php echo $article['preview']; ?></p>
