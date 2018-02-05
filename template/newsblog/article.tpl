@@ -1,7 +1,13 @@
 <?php echo $header; ?>
 <div class="container blog_article">
   <div class="article_bg" style="background-image: url('<?php echo $original; ?>')"></div>
-  
+  <div class="row">
+    <div class="col-md-10 col-sm-12 preview_text">
+      <h1 class="focused"><span><?php echo $heading_title; ?></span></h1>
+      <?php echo $preview;?>
+    </div>
+  </div>
+
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
     <?php $class = 'col-sm-6'; ?>
@@ -12,11 +18,6 @@
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <div class="row">
-        <div class="col-md-10 col-sm-12 preview_text">
-        	<h1 class="focused"><span><?php echo $heading_title; ?></span></h1>
-            <?php echo $preview;?>
-
-        </div>
         <div class="col-sm-12 article_itself"><?php echo $description; ?></div>
         <div class="col-sm-12">          
           
@@ -41,25 +42,6 @@
             <?php } ?>
         </div>
       </div>
-
-  	  <?php if ($articles) { ?>
-  	  <h3><?php echo $text_related; ?></h3>
-      <div class="row">
-        <?php foreach ($articles as $article) { ?>
-        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
-          <div class="product-thumb transition bloggo">
-            <?php if ($article['thumb']) { ?>
-            <div class="image"><a href="<?php echo $article['href']; ?>" style="background-image: url('<?php echo $article['thumb']; ?>')"></a></div>
-            <?php } ?>
-            <div class="caption">
-              <h4><a href="<?php echo $article['href']; ?>"><?php echo $article['name']; ?></a></h4>
-              <?php echo $article['preview']; ?>
-            </div>
-          </div>        
-        </div>
-        <?php } ?>
-      </div>
-      <?php } ?>
 
       <?php if ($comments_vk) { ?>
       <div class="row">
@@ -109,81 +91,97 @@
         </div>
       </div>
       <?php } ?>
-
-      <?php if ($products) { ?>
-      <h3><?php echo $text_related_products; ?></h3>
+      <hr>
+      <?php if ($articles) { ?>
+      <h3><?php echo $text_related; ?></h3>
       <div class="row">
-        <?php $i = 0; ?>
-        <?php foreach ($products as $product) { ?>
-        <?php if ($column_left && $column_right) { ?>
-        <?php $class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12'; ?>
-        <?php } elseif ($column_left || $column_right) { ?>
-        <?php $class = 'col-lg-4 col-md-4 col-sm-6 col-xs-12'; ?>
-        <?php } else { ?>
-        <?php $class = 'col-lg-3 col-md-3 col-sm-6 col-xs-12'; ?>
-        <?php } ?>
-        <div class="<?php echo $class; ?>">
-          <div class="product-thumb transition">
-            <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+        <?php foreach ($articles as $article) { ?>
+        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="product-thumb transition bloggo">
+            <?php if ($article['thumb']) { ?>
+              <div class="image" ><a href="<?php echo $article['href']; ?>" style="background-image: url('<?php echo $article['original']; ?>')"></a></div>
+            <?php } ?>
             <div class="caption">
-              <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-              <p><?php echo $product['description']; ?></p>
-              <?php if ($product['rating']) { ?>
-              <div class="rating">
-                <?php for ($i = 1; $i <= 5; $i++) { ?>
-                <?php if ($product['rating'] < $i) { ?>
-                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
-                <?php } else { ?>
-                <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
-                <?php } ?>
-                <?php } ?>
-              </div>
-              <?php } ?>
-              <?php if ($product['price']) { ?>
-              <p class="price">
-                <?php if (!$product['special']) { ?>
-                <?php echo $product['price']; ?>
-                <?php } else { ?>
-                <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
-                <?php } ?>
-                <?php if ($product['tax']) { ?>
-                <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-                <?php } ?>
-              </p>
-              <?php } ?>
+                <h4><a href="<?php echo $article['href']; ?>"><?php echo $article['name']; ?></a></h4>
+                <div class="text_wrapper"><?php echo $article['preview']; ?></div>                
             </div>
-            <div class="button-group">
-              <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span> <i class="fa fa-shopping-cart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
-              <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+            <div class="button_wrapper">
+              <div class="button-group pull-right">
+                <a href="<?php echo $article['href']; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_more; ?></span></a>
+                <?php if ($article['date']) { ?>
+                <button type="button" data-toggle="tooltip" title="<?php echo $article['date']; ?>"><i class="fa fa-clock-o"></i></button>
+                <?php } ?>
+                <button type="button" data-toggle="tooltip" title="<?php echo $article['viewed']; ?>"><i class="fa fa-eye"></i></button>
+              </div>
             </div>
           </div>
         </div>
-        <?php if (($column_left && $column_right) && ($i % 2 == 0)) { ?>
-        <div class="clearfix visible-md visible-sm"></div>
-        <?php } elseif (($column_left || $column_right) && ($i % 3 == 0)) { ?>
-        <div class="clearfix visible-md"></div>
-        <?php } elseif ($i % 4 == 0) { ?>
-        <div class="clearfix visible-md"></div>
-        <?php } ?>
-        <?php $i++; ?>
         <?php } ?>
       </div>
       <?php } ?>
 
-      <?php if ($tags) { ?>
-      <p><?php echo $text_tags; ?>
-        <?php for ($i = 0; $i < count($tags); $i++) { ?>
-        <?php if ($i < (count($tags) - 1)) { ?>
-        <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>,
-        <?php } else { ?>
-        <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>
-        <?php } ?>
-        <?php } ?>
-      </p>
-      <?php } ?>
+
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
+  <hr>
+  <?php if ($products) { ?>
+  <h3 class="text-center"><?php echo $text_related_products; ?></h3>
+  <div class="row">
+    <?php foreach ($products as $product) { ?>
+    <div class="col-md-3">
+      <div class="product-thumb transition">
+        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+        <div class="caption">
+          <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+          <p><?php echo $product['description']; ?></p>
+          <?php if ($product['rating']) { ?>
+          <div class="rating">
+            <?php for ($i = 1; $i <= 5; $i++) { ?>
+            <?php if ($product['rating'] < $i) { ?>
+            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+            <?php } else { ?>
+            <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+            <?php } ?>
+            <?php } ?>
+          </div>
+          <?php } ?>
+          <?php if ($product['price']) { ?>
+          <p class="price">
+            <?php if (!$product['special']) { ?>
+            <?php echo $product['price']; ?>
+            <?php } else { ?>
+            <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+            <?php } ?>
+            <?php if ($product['tax']) { ?>
+            <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+            <?php } ?>
+          </p>
+          <?php } ?>
+        </div>
+        <div class="button-group">
+          <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span> <i class="fa fa-shopping-cart"></i></button>
+          <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
+          <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+        </div>
+      </div>
+    </div>
+    <?php } ?>
+  </div>
+  <?php } ?>
+
+  <?php if ($tags) { ?>
+  <p class="article_tags"><?php echo $text_tags; ?>
+    <?php for ($i = 0; $i < count($tags); $i++) { ?>
+    <?php if ($i < (count($tags) - 1)) { ?>
+    <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>,
+    <?php } else { ?>
+    <a href="<?php echo $tags[$i]['href']; ?>"><?php echo $tags[$i]['tag']; ?></a>
+    <?php } ?>
+    <?php } ?>
+  </p>
+  <?php } ?>
+
+
 </div>
 
 <script type="text/javascript"><!--
