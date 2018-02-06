@@ -44,15 +44,14 @@
                 <h4><a href="<?php echo $article['href']; ?>"><?php echo $article['name']; ?></a></h4>
                 <div class="text_wrapper"><?php echo $article['preview']; ?></div>                
             </div>
-            <div class="button_wrapper">
-              <div class="button-group pull-right">
-                <a href="<?php echo $article['href']; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_more; ?></span></a>
-                <?php if ($article['date']) { ?>
-                <button type="button" data-toggle="tooltip" title="<?php echo $article['date']; ?>"><i class="fa fa-clock-o"></i></button>
-                <?php } ?>
-                <button type="button" data-toggle="tooltip" title="<?php echo $article['viewed']; ?>"><i class="fa fa-eye"></i></button>
-              </div>
+            <div class="button-group button_wrapper text-center">
+              <a href="<?php echo $article['href']; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_more; ?></span></a>
+              <?php if ($article['date']) { ?>
+              <span class="post_date"><?php echo $article['date']; ?></span>
+              <?php } ?>
+              <button type="button" data-toggle="tooltip" title="<?php echo $article['viewed']; ?>"><i class="fa fa-eye"></i></button>
             </div>
+            
           </div>
         </div>
         <?php } ?>
