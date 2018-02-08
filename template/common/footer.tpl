@@ -1,7 +1,7 @@
 <footer class="main-footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 first_column">
+			<div class="col-md-6 first_column">
 				<ul class="footer_contact">
 					<li class="footer-title first-title">Связаться с нами:</li>
 					<li class="footer-email"><a href="mailto:hello@locco.me">hello@locco.me</a></li>
@@ -18,7 +18,7 @@
 					<p>К оплате принимаются международные платежные карты систем Visa и MasterCard любого банка</p>
 				</div>					
 			</div>
-			<div class="col-sm-3 second_column">
+			<div class="col-md-3 second_column">
 				
 				<ul>
 					<li class="footer-title">Полезные ссылки:</li>
@@ -31,7 +31,7 @@
 					<li><a href="<?php echo $sitemap; ?>">Карта сайтa</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-3">				
+			<div class="col-md-3">				
 				<ul>
 					<li class="footer-title">FAQ:</li>
 					<li><a href="http://locco.me/chto-takoe-lokalizaciya">Что такое локализация?</a></li>

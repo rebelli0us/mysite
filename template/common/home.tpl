@@ -71,34 +71,40 @@
 	<!-- FOR WHOM SECTION -->
 	<section class="row_wrapper for_whom">
 		<div class="row">
-			<h2 class="text-center focused"><span>Кому понадобится сервис <mark>locco</mark>.me?</span></h4>
-			<div class="col-sm-6">
-				<h3><span class="num">1.</span> instagram<small> / инстаграм</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque quia earum ex iste modi distinctio deserunt excepturi ullam illo pariatur harum dicta at, debitis veritatis aliquid totam commodi perferendis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, veritatis odit dolorem, facere tempore magni nihil omnis accusamus, ipsa, doloremque eum distinctio expedita repudiandae saepe quos nemo corrupti corporis ipsum?</p>
+			<h2 class="text-center focused"><span>Кому понадобится сервис <mark>locco</mark>.me?</span></h2>
+			<div class="col-sm-6 clients">
+				<i class="fa fa-instagram"></i> 
+				<h3>instagram<small> / инстаграм</small></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
-			<div class="col-sm-6">				
-				<h3><span class="num">2.</span> facebook<small> / фейсбук</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quaerat fugit eveniet pariatur provident at ullam quidem velit, dignissimos quo explicabo voluptatibus sed reprehenderit sit ad veritatis quisquam, illum quia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure placeat quis repudiandae possimus nulla distinctio esse. Eos cum, dolor maiores, nam voluptate in aut similique dolorum iusto perspiciatis maxime, dicta.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-6">
-				<h3><span class="num">3.</span> youtube<small> / ютуб</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus voluptatem aut fuga nemo facilis rem adipisci, neque reprehenderit quidem reiciendis error asperiores aperiam cum, dolore, quas sit vel temporibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odit voluptatibus incidunt dicta repellendus delectus nisi, reprehenderit inventore obcaecati eaque similique minima autem minus, ipsam. Praesentium consequatur, enim laboriosam tenetur.</p>
-			</div>
-			<div class="col-sm-6">
-				<h3><span class="num">4.</span> telegram<small> / телеграм</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus accusantium sed consequatur cumque officia nemo odit perspiciatis quae repudiandae. Voluptatum cupiditate, impedit aliquam qui, nobis optio. Maiores, error beatae illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi amet velit accusamus consequatur qui iste aut accusantium, rem in beatae deleniti aspernatur aliquid similique possimus, sed facilis, repellendus a!</p>
+			<div class="col-sm-6 clients"> 				
+				<i class="fa fa-facebook"></i> 
+				<h3>facebook<small> / фейсбук</small></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-6">
-				<h3><span class="num">5.</span> twitter<small> / твиттер</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolorum quod earum! Quis delectus, ipsa cumque odit eius commodi non maiores temporibus. Adipisci quos, repudiandae officiis, laboriosam fugiat culpa provident.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil iure aperiam dignissimos qui est impedit dolore nobis sequi eum quaerat molestias, velit perferendis maxime deleniti placeat, expedita, obcaecati animi odit.</p>
+			<div class="col-sm-6 clients">
+				<i class="fa fa-youtube"></i> 
+				<h3>youtube<small> / ютуб</small></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
-			<div class="col-sm-6">
-				<h3><span class="num">6.</span> followers<small> / подписчики</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum iusto corrupti tenetur beatae facere, vel repellendus, eveniet est nam laboriosam consequatur hic temporibus laudantium reiciendis error fugiat odit, provident excepturi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque blanditiis, cum perspiciatis id quia nobis vel repellat natus perferendis aperiam ex neque totam saepe quaerat accusantium, consequatur aut amet.</p>
+			<div class="col-sm-6 clients">
+				<i class="fa fa-telegram"></i> 
+				<h3>telegram<small> / телеграм</small></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 clients">
+				<i class="fa fa-twitter"></i> 
+				<h3>twitter<small> / твиттер</small></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+			</div>
+			<div class="col-sm-6 clients">
+				<i class="fa fa-plus"></i> 
+				<h3>other<small> / другие</small></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
 	</section>
@@ -171,10 +177,17 @@
 					<input type="hidden" name="admin_email" value="hello@locco.me">
 					<input type="hidden" name="form_subject" value="Контактная форма">      
 					<div class="form-group">
-						<textarea name="text" class="form-control" id="user-comment" rows="3" placeholder="Вопрос / комментарий / предложение" required></textarea>
+						<textarea name="text" class="form-control" id="user-comment" required></textarea>
+						<label>Вопрос / комментарий / предложение</label>
 					</div>
-					<input class="form-control" type="name" name="FirstName" placeholder="Как Вас зовут?" required>
-					<input class="form-control" type="email" name="Email" placeholder="Адрес email" required>
+					<div>
+						<input class="form-control" type="text" name="FirstName" required autocomplete="off">
+						<label>Имя</label>
+					</div>
+					<div>
+						<input class="form-control" type="text" name="Email" required autocomplete="off">
+						<label>E-mail</label>
+					</div>
 					<button class="btn btn-primary">Отправить</button>
 				</form>
 				<!-- <div class="success">Спасибо!<br>Скоро придёт ответ на указанный email</div> -->

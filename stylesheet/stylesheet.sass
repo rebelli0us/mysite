@@ -473,14 +473,30 @@ input.btn-primary
 		// image: url("../image/for_whom_bg.jpg")
 		repeat: no-repeat
 		size: cover
-
+	.clients
+		text-align: center
+		&:hover
+			h3
+				padding-right: 20px
+				padding-left: 20px
+				border-bottom-color: #fff
+			.fa-instagram
+				color: #e4405f
+			.fa-facebook
+				color: #3b5999
+			.fa-youtube
+				color: #cd201f
+			.fa-telegram
+				color: #0088cc
+			.fa-twitter
+				color: #55acee
+			.fa-plus
+				color: #dd4b39
 	.focused
-		span
-			background-color: rgba(26, 188, 156, .75) // --- green
-		small, mark
-			background-color: transparent
+	 	span, mark
+	 		background-color: #3498db
 	small
-		color: #ededed
+		color: rgba(255, 255, 255, 0.75)
 	sup
 		padding: 10px
 		margin-right: -10px
@@ -489,11 +505,24 @@ input.btn-primary
 		margin-left: -10px
 	h3
 		margin-top: 0
+		padding-bottom: 4px
 		font-size: 36px
 		font-family: MyriadProBold, sans-serif
+		border-bottom: 3px solid rgba(255, 255, 255, .75)
+		display: inline-block
+		transition: .25s ease-in-out
 	p
 		padding: 0 50px
 		text-align: justify
+	i
+		font-size: 44px
+		margin: 14px 0
+		display: inline-block
+		width: 100%
+		transition: .25s ease-in-out
+		transition-delay: .2s
+
+
 
 
 // --------- FOURTH SECTION --------- //
@@ -566,32 +595,53 @@ input.btn-primary
 	.focused
 		span
 			background: rgba(255, 204, 0, .85)
+	form
+		div
+			position: relative
+			z-index: 99
 	.form-group
 		width: 49%
 		float: left
 		margin-right: 2%
+		background-color: rgba(255, 204, 0, .85)
+		z-index: 100
 		textarea
 			min-height: 189px
+			background-color: transparent
 			resize: none
 	input
 		width: 49%
 		margin-bottom: 20px
 		height: 50px
+	label
+		font-family: MyriadSetProThin, sans-serif
+		font-size: 20px
+		position: absolute 
+		top: 13px
+		padding-left: 13px
+		pointer-events: none
+		transition: .25s ease-in-out
 	.form-control
 		border:
 				color: rgba(255, 204, 0, .55)
 				radius: 0
 		background: rgba(255, 204, 0, .85)
 		color: #fff
-		font-size: 24px
+		font-size: 20px
 		font-family: MyriadSetProThin, sans-serif
-		transition: all .25s ease-in-out
+		transition: all .25s ease-in-out 
+		padding-top: 20px
 		&::placeholder
 			color: #fff
-		&:focus
+		&:focus,&:valid 
 			border-color: rgba(255, 204, 0, 1)
 			background: rgba(255, 204, 0, 1)
 			box-shadow: 0 0 1px rgba(0,0,0,0.5)
+			~ label
+				top: 4px
+				font-size: 17px
+				padding-left: 12px
+				color: rgba(255, 255, 255, 0.85)
 	.btn-primary
 		border: none
 		border-radius: 0
