@@ -74,36 +74,36 @@
 			<h2 class="text-center focused"><span>Кому понадобится сервис <mark>locco</mark>.me?</span></h2>
 			<div class="col-sm-6 clients">
 				<i class="fa fa-instagram"></i> 
-				<h3>instagram<small> / инстаграм</small></h3>
+				<h3 class="h-instagram">instagram<small> / инстаграм</small></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 			<div class="col-sm-6 clients"> 				
 				<i class="fa fa-facebook"></i> 
-				<h3>facebook<small> / фейсбук</small></h3>
+				<h3 class="h-facebook">facebook<small> / фейсбук</small></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6 clients">
 				<i class="fa fa-youtube"></i> 
-				<h3>youtube<small> / ютуб</small></h3>
+				<h3 class="h-youtube">youtube<small> / ютуб</small></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 			<div class="col-sm-6 clients">
 				<i class="fa fa-telegram"></i> 
-				<h3>telegram<small> / телеграм</small></h3>
+				<h3 class="h-telegram">telegram<small> / телеграм</small></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6 clients">
 				<i class="fa fa-twitter"></i> 
-				<h3>twitter<small> / твиттер</small></h3>
+				<h3 class="h-twitter">twitter<small> / твиттер</small></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 			<div class="col-sm-6 clients">
 				<i class="fa fa-plus"></i> 
-				<h3>other<small> / другие</small></h3>
+				<h3 class="h-plus">other<small> / другие</small></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
