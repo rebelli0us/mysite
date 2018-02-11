@@ -25,6 +25,7 @@
 					<?php foreach ($informations as $information) { ?>
 					<li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
 					<?php } ?>
+					<li><a href="/locco/index.php?route=product/category&path=59">Планы подписки</a></li>
 					<li><a href="/locco/index.php?route=newsblog/category&newsblog_path=9">Блогго</li>
 					<li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></li>
 					<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>

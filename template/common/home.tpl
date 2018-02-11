@@ -30,6 +30,12 @@
 	<!-- HOW IT WORKS SECTION -->
 	<section class="row_wrapper about_us">
 		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h3 class="focused text-center"><span>Как это работает?</span></h3>
+				<p class="how_to">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti velit, aliquam sed dignissimos aspernatur eveniet enim. Aspernatur nostrum repellendus obcaecati cum, quae saepe, eveniet accusamus autem, alias dolorem nihil cumque?</p>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-sm-6 col-md-3">
 				<span class="num">1.</span>
 				<h4>Активируй подходящую подписку.</h4>

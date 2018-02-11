@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <div class="container blog_category">
-  <div class="category_bg" style="background-image: url('<?php echo $original; ?>')"></div>
+  <div class="category_bg"></div>
 
   <div class="row"><?php echo $column_left; ?>
     <?php if ($column_left && $column_right) { ?>
@@ -11,7 +11,7 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <div class="category_desc">
+      <div class="preview_text">
         <h1 class="focused text-center"><span><?php echo $heading_title; ?></span></h1>
         <?php if ($thumb || $description) { ?>
         <div class="row">
@@ -35,7 +35,7 @@
       <?php if ($articles) { ?>
       <div class="row">
         <?php foreach ($articles as $article) { ?>
-        <div class="product-layout col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <div class="product-layout col-md-6 col-sm-10 ">
           <div class="product-thumb transition bloggo">
             <?php if ($article['thumb']) { ?>
               <div class="image" ><a href="<?php echo $article['href']; ?>" style="background-image: url('<?php echo $article['original']; ?>')"></a></div>
