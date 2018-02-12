@@ -224,8 +224,13 @@ label
 		background-color: rgba(255, 241, 185, .35)
 .text-danger
 	color: #ff681e
-	margin-top: -20px
-	margin-bottom: 10px
+.alert
+	border-radius: 0
+	color: rgba(0,0,0,.7)
+	a
+		text-decoration: underline
+.alert-success
+		box-shadow: 0 0 40px rgba(0,0,0,0.5)
 .has-error .form-control
 	border-color: rgba(255, 104, 30, 1)
 	&:focus
@@ -1110,10 +1115,10 @@ footer
 		position: relative
 		height: auto
 		background: linear-gradient(-45deg, #fe0847, #feae3f);
-		border-radius: 15px
+		border-radius: 0
 		margin: 0 auto
 		padding: 40px 20px
-		box-shadow: 0 10px 15px rgba(0, 0, 0, .3)
+		box-shadow: 0 0 40px rgba(0,0,0,0.5)		
 		transition: .5s ease-in-out
 		overflow: hidden
 		&:before
@@ -1127,17 +1132,15 @@ footer
 			z-index: 1
 			transform: skewY(-5deg) scale(1.5)
 		&:hover
-			box-shadow: 0 10px 15px rgba(0, 0, 0, .4)
+			box-shadow: 0 0 40px rgba(0,0,0,0.75)
+
 		h4
 			position: relative
 			margin: 20px 0 0 
 			padding: 0
 			z-index: 2
-			a
-				color: #fff
-				font-size: 28px
-				&:hover
-					color: #ffcc00
+			color: #fff
+			font-size: 32px				
 		ul
 			margin: 0 0 20px
 			padding: 0
@@ -1146,36 +1149,35 @@ footer
 				color: #fff
 				margin: 0 0 10px
 				padding: 0
-				font-size: 18px
+				font-size: 20px
 				line-height: 20px
 				font-family: MyriadSetProThin, sans-serif
-				.fa
-					font-size: 15px
-		.cart_btn
-			position: relative
-			z-index: 2
-			background: #fff
-			color: #555
-			width: 75%
-			height: 50px
-			line-height: 50px
-			border-radius: 50px
-			display: block
-			text-align: center
-			margin: 20px auto 0
-			font-size: 20px
-			cursor: pointer
-			box-shadow: 0 5px 10px rgba(0, 0, 0, .3)
-			&:hover
-				text-decoration: none
-				transform: scale(1.03)
-	.subscribe_image
-		margin: 0 auto
-		width: 128px
-		height: 128px
-		padding: 30px
-		border-radius: 50%
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, .3)
+.cart_btn
+	position: relative
+	z-index: 2
+	background: #fff
+	color: #555
+	width: 75%
+	height: 50px
+	line-height: 50px
+	border-radius: 50px
+	display: block
+	text-align: center
+	margin: 20px auto 0
+	font-size: 20px
+	cursor: pointer
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .3)
+	&:hover
+		text-decoration: none
+		transform: scale(1.03)
+		color: #000
+.subscribe_image
+	margin: 0 auto
+	width: 128px
+	height: 128px
+	padding: 30px
+	border-radius: 50%
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, .3)
 .price
 	position: relative
 	z-index: 2
@@ -1191,7 +1193,7 @@ footer
 	.price-new
 		position: absolute
 		font-size: 50px
-		top: -26px
+		top: -28px
 		text-align: center
 		margin-left: -10px
 		transform: rotate(-5deg)
@@ -1202,31 +1204,31 @@ footer
 .col-sm-4
 	&:nth-child(1)
 		.caption, .image
-	     	background: linear-gradient(-45deg, #f403d1, #645bf6);
+	     	background: linear-gradient(-45deg, #f403d1, #645bf6)
 	&:nth-child(2)
 		.caption, .image
-	     	background: linear-gradient(-45deg, #ffec61, #f321d7);
+	     	background: linear-gradient(-45deg, #ffec61, #f321d7)
 	&:nth-child(3)
 		.caption, .image
-	     	background: linear-gradient(-45deg, #24ff72, #9a4eff);
+	     	background: linear-gradient(-45deg, #24ff72, #9a4eff)
 	&:nth-child(4)
 		.caption, .image
-	     	background: linear-gradient(-45deg, #f403d1, #645bf6);
+	     	background: linear-gradient(-45deg, #f403d1, #645bf6)
 	&:nth-child(5)
 		.caption, .image
-	     	background: linear-gradient(-45deg, #ffec61, #f321d7);
+	     	background: linear-gradient(-45deg, #ffec61, #f321d7)
 	&:nth-child(6)
 		.caption, .image
 	     	background: linear-gradient(-45deg, #24ff72, #9a4eff) 
 
 // SUBSCRIBTION PLAN PAGE
 .subscribe_plan_bg
-	height: 30vh
+	height: 1000px
 	width: 100vw
 	position: absolute
 	z-index: -100
-	background: linear-gradient(-45deg, #24ff72, #9a4eff)
 	background-color: #BF55EC
+	background: linear-gradient(-45deg, #fe0847, #feae3f);
 	top: 0
 	left: 0
 	overflow: hidden
@@ -1241,72 +1243,190 @@ footer
 		z-index: 1
 		transform: skewY(-5deg) scale(2)
 .subscribe_top
-	margin-bottom: 20px
-	padding-top: 5vh
+	margin: 60px auto 40px
+	padding: 30px 10px 30px  
+	color: rgba(0,0,0,.5)
+	background: linear-gradient(-45deg, #ffffff, #ededed)
+	box-shadow: 0 0 40px rgba(0,0,0,0.5)
+	border-radius: 0
+	.caption
+		position: relative
+		height: auto
+		text-align: center
+		border-radius: 0
+		background: linear-gradient(-45deg, #f403d1, #645bf6)
+		box-shadow: 0 0 40px rgba(0,0,0,0.5)
+		overflow: hidden
+		&:before
+			content: ''
+			position: absolute
+			bottom: -20%
+			left: 0
+			width: 100%
+			height: 40%
+			background: rgba(255,255,255, .1)
+			z-index: 1
+			transform: skewY(-5deg) scale(2)
+
+		h1
+			font-family: MyriadProBold, sans-serif
+			font-size: 44px
+			margin-top: 30px
+			color: #fff
+		.subscribe_price
+			margin-top: 0		
+			span
+				font-size: 54px
+			.price-new
+				font-size: 60px
+				top: -38px
+	.row
+		margin-right: 15px
+		margin-left: 15px
+.specification
+	border-radius: 0
+	margin-left: 5px
+	h4
+		margin-top: 20px
+		font-size: 32px
+	.fa
+		left: -33px
+		top: 3px
+		position: absolute
+.fa_cicrled
 	color: #fff
-	.image
-		width: 300px
-		height: 300px
-		padding: 60px
-		border-radius: 50%
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, .3)
-		background: linear-gradient(-45deg, #24ff72, #9a4eff)
-	h1
-		margin:
-			top: 5vh
-			left: 30px
-		font-family: MyriadProBold, sans-serif
-		font-size: 72px
-		text-align: Left
-	.key_options
-		margin-top: 60px
-	.option
-		font-family: MyriadSetProThin, sans-serif
-		font-size: 24px
-		line-height: 1.3
-		.fa
-			font-size: 20px
-	.subscribe_price
-		font-size: 5vh
-		// text-align: center
-		margin-top: 50px		
-		span
-			font-size: 54px
-		.price-new
-			font-size: 60px
-			top: -38px
+	font-size: 20px
+	line-height: 20px
+	border-radius: 50%
+	background-color: #37E388
+	padding: 5px 5px
+.fa_relative
+	position: relative
+.custom_table
+	margin: 0
+	tbody+tbody
+		border: none
+		margin-bottom: 10px
+	>tbody
+
+		>.secondary_tr>td
+			border: none
+			color: rgba(0, 0, 0, .35)
+		>tr
+			margin-bottom: 10px
+			border-bottom: 1px solid rgba(0,0,0,.1)
+			&:nth-last-child
+				border-bottom: none
+			>td
+				margin-bottom: 10px
+				color: grba(0,0,0,.5)
+				padding: 8px 2px
+				border: none
+				background-color: #f2f2f2	
+			>.td-price-new-heading
+				color: #ff681e
+				font-size: 20px
+			>.td-price-new
+				font-family: MyriadProBold,sans-serif
+				font-size: 32px
+				color: #ffcc00
+				padding-top: 0
+				line-height: 1.2
+			>.td-price
+				text-decoration: line-through
+				font-size: 20px
+			>.td-price-old
+				text-decoration: line-through
+				font-family: MyriadProBold, sans-serif
+				font-size: 20px
+
+
+
 .description
+	color: rgba(0,0,0,.4)
+	border-radius: 0
+	box-shadow: 0 0 40px rgba(0,0,0,0.5)
+	background: linear-gradient(-45deg, #ffffff, #ededed)
+	padding: 5px 13px
 	p
 		text-align: justify
 		margin-top: 10px
 		padding: 20px
-		border: 1px solid rgba(0, 0, 0, .05)
-		color: rgba(0, 0, 0, .65)
-.custom_table
-	margin-top: 40px
-	tbody+tbody
-		border-top: 1px solid #ededed
-	>tbody
-		>.secondary_tr>td
-			border-top: none
-			color: rgba(0, 0, 0, .35)
-			border-color: #ededed
-		>tr>td
-			font-size: 20px
-			color: rgba(0,0,0,.4)
-			padding: 10px 20px
-			border-color: #ededed
+		olor: rgba(0,0,0,.4)
+		border: 1px solid rgba(0,0,0,.1)
+.product
+	background: linear-gradient(-45deg, #ffffff, #ededed) 
+	box-shadow: 0 0 40px rgba(0,0,0,0.5)
+	width: 65%
+	margin-right: 15px
+	#product
+		color: rgba(0,0,0,.4)
+	.card
+		padding: 6px 13px 0
+		.text-danger
+			margin: 1%
+		.card-header
+			background-color: #f2f2f2
+			border-bottom: 1px solid rgba(0,0,0,.1)
+			margin-bottom: 10px
+			margin-top: -10px	
+			label
+				font-size: 22px
+				width: 100%				
+				a
+					color: rgba(0,0,0,.7)
+					position: relative
+					display: block
+					width: 100%
+					color: rgba(0,0,0,.7)
+					&:after
+						content: ''
+						display: block
+						position: absolute
+						height: 1px
+						right: 10px
+						top: 16px
+						width: 16px
+						transform: rotate(45deg)
+						background-color: rgba(0,0,0,.7)
+						transition: .15s ease-in-out
+					&:before
+						content: ''
+						position: absolute
+						display: block
+						height: 1px			
+						top: 16px
+						right: 10px
+						width: 16px
+						transform: rotate(-45deg)
+						background-color: rgba(0,0,0,.7)
+						transition: .15s ease-in-out
+					&[aria-expanded="false"]
+						color: rgba(0,0,0,.3)
+						&:after
+							transform: rotate(90deg)
+							background-color: rgba(0,0,0,.3)
+						&:before
+							transform: rotate(0)
+							background-color: rgba(0,0,0,.3)
+
+		textarea
+			resize: vertical
+			min-height: 100px
+		input, textarea, select
+			color: rgba(0,0,0,.3)
+			font-size: 16px
+			font-family: MyriadSetProThin, sans-serif
+			&:focus
+				color: rgba(0,0,0,.9)
+	.form-control
+		width: 98%
+		margin-left: 1%
 
 
-.specification
-	h4
-		span
-			background-color: #3498db
-	
-	.fa
-		color: #37E388
-		font-size: 28px
-		line-height: 20px
+
+
+
 
 
 @import "media"

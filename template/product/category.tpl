@@ -20,7 +20,7 @@
               <div class="subscribe_image">
                 <img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" />
               </div>
-              <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+              <h4><?php echo $product['name']; ?></h4>
               <?php if ($product['price']) { ?>
               <p class="price">
                 <?php if (!$product['special']) { ?>
@@ -37,7 +37,7 @@
                 <?php } ?>                 
               <?php } ?>
               </ul>
-              <a onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');" class="cart_btn "><?php echo $button_cart; ?></a>
+              <a href="<?php echo $product['href']; ?>" class="cart_btn "><?php echo $button_cart; ?></a>
             </div>
           </div>          
         </div>
