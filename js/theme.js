@@ -25,4 +25,35 @@ $(document).ready(function(){
 		$('html').animate({'scrollTop': 0}, 1000);
 		return false;
 	});
+
 });
+
+var latitude = 50.439242,
+	longitude = 30.496362,
+	map_zoom = 18;
+
+var marker_url = '/image/icon-location.svg';
+
+var main_color = '#007148',
+	saturation_value= -1,
+	brightness_value= 1;
+
+var style= [ 
+	{
+		//Скрываем обозначение дорог на карте
+		featureType: 'road.highway',
+		elementType: 'labels',
+		stylers: [
+		    {visibility: "off"}
+		]
+	},
+	{
+		featureType: "road.highway",
+		elementType: "geometry.fill",
+		stylers: [
+			{ hue: main_color },
+			{ visibility: "on" }, 
+			{ lightness: brightness_value }, 
+			{ saturation: saturation_value }
+		]
+	}

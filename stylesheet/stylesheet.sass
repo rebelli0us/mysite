@@ -208,7 +208,8 @@ a
 		border-color: rgba(255, 204, 0, .75)
 a.list-group-item, button.list-group-item
 	&:hover,&:focus
-		background-color: rgba(255, 204, 0, .75)
+		background-color: #ffcc00
+		color: #fff
 .panel-default
 	border-color: #ffcc00
 .panel
@@ -220,128 +221,35 @@ label
 	font-weight: 500
 .focused
 	span
-		// box-shadow: 0 0 2px rgba(0,0,0,0.5)
 		background-color: rgba(255, 241, 185, .35)
 .text-danger
 	color: #ff681e
 .alert
 	border-radius: 0
-	color: rgba(0,0,0,.7)
+	color: #555
 	a
 		text-decoration: underline
 .alert-success
-		box-shadow: 0 0 40px rgba(0,0,0,0.5)
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1)
+	border: 1px solid rgba(0,0,0,0.1)
+	background-color: #f2f2f2
+	color: #555
 .has-error .form-control
 	border-color: rgba(255, 104, 30, 1)
 	&:focus
 		border-color: rgba(255, 104, 30, 1)
-.btn-primary
-	border: none
-	border-radius: 0
-	font-size: 16px
-	position: relative
-	color: #ededed
-	transition: all .25s ease-in-out
-	background-color: #ff6c00
-	background: linear-gradient(to top, #ff6c00, #ffbc00)
-	box-shadow: 0 0 4px rgba(0,0,0,0.5)
-	font-family: MyriadSetProThin, sans-serif
-	z-index: 1003
-	padding: 8px 20px
-	outline: none
-	&:before
-		content: ''   
-		display: block
-		height: 100%
-		width: 100%
-		position: absolute
-		background: linear-gradient(to top, #ff6c00, #ffcc00)
-		border-radius: inherit
-		top: 0
-		left: 0
-		opacity: 0
-		transition: all .15s ease-in-out
-		z-index: -100
-	&:hover,&:focus,&:active
-		text-decoration: none
-		color: #fff
-		background-color: #ff9b00
-		outline: none
-		border-color: transparent
-		box-shadow: 0 0 2px rgba(0,0,0,0.5)		
-		&:before
-			opacity: 1
-input.btn-primary
-	&:hover,&:focus,&:active
-		text-decoration: none
-		color: #fff
-		background: linear-gradient(to top, #ff6c00, #ffcc00)
-		box-shadow: 0 0 2px rgba(0,0,0,0.5)
-		outline: none
-		border-color: transparent
 .well
 	background-color: #FFF
+	border: 1px solid rgba(0,0,0, .1)
 	border-radius: 0
-
-.get_in_touch_text
-	span 
-		box-shadow: 0 0 2px rgba(0,0,0,0.5)
-.form-control
 	box-shadow: none
-.get_in_touch
-	textarea.form-control
-		resize: vertical
-		min-height: 211px
-		box-shadow: 0 0 2px rgba(0,0,0,0.5)
-		&:focus
-			box-shadow: 0 0 1px rgba(0,0,0,0.5)			
-	.form-control
-		margin-bottom: 30px
-		border:
-				color: rgba(255, 204, 0, 1)
-				radius: 0
-		box-shadow: none
-		background: rgba(255, 204, 0, 1)
-		color: #fff
-		font-size: 24px
-		font-family: MyriadSetProThin, sans-serif
-		transition: all .25s ease-in-out
-		box-shadow: 0 0 2px rgba(0,0,0,0.5)
-		&::placeholder
-			color: #fff
-		&:focus
-			background: rgba(255, 204, 0, .75)
-	input
-		height: 50px
-	.btn-primary
-		border: none
-		border-radius: 0
-		background: rgba(255, 204, 0, .85)
-		font-size: 24px
-		font-family: MyriadSetProThin, sans-serif
-		padding: 7px 20px
-		width: 100%
-		transition: all .25s ease-in-out
-		box-shadow: 0 0 2px rgba(0,0,0,0.5)
-		outline: none
-		color: #fff
-		&:hover,&:focus
-			background: rgba(255, 204, 0, 1)
-			box-shadow: 0 0 1px rgba(0,0,0,0.5)
-			outline: none
-	.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover
-		background: rgba(255, 204, 0, 1)
-
 .form-control
 	border:
-		color: rgba(255, 204, 0, .55)
+		color: rgba(0,0,0,.1)
 		radius: 0
 	&:focus
-		border-color: rgba(255, 204, 0, 1)
-		box-shadow: 0 0 1px rgba(0,0,0,0.5)
-		// box-shadow: inset 0 0 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 204, 0, .55)
-
-
+		border-color: rgba(255, 204, 0, .5)
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 3px rgba(255, 204, 0, .35)
 .main-container
 	width: 100vw
 	color: #fff
@@ -360,51 +268,69 @@ input.btn-primary
 	.row
 		max-width: 1170px
 		margin: 20px auto
-.def_btn
-	display: block
-	padding: 8px 20px
-	text-align: center
-	border: none
-	border-radius: 25px
-	font-size: 18px
+.btn
+	border-radius: 20px
+	padding-left: 16px
+	padding-right: 16px
+	transition: .15s ease-in-out
+.btn-primary
+	background-color: #ffcc00
+	border-color: rgba(0,0,0,.05)
+	&:hover
+		border-color: rgba(0,0,0,.25)
+		box-shadow: 0 1px 3px rgba(0,0,0,0.15)
+		background-color: #ffcc00
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover
+	outline: none
+	border-color: rgba(0,0,0,.25)
+	box-shadow: 0 1px 3px rgba(0,0,0,0.15)
+	background-color: #ffcc00
+.custom_btn
 	position: relative
-	color: #ededed
-	transition: all .25s ease-in-out
-	background-color: #ae44c8
-	background: linear-gradient(to top, #ae44c8, #8657db)
-	box-shadow: 0 2px 5px rgba(0,0,0,0.35)
+	z-index: 2
+	background: #fff
+	color: #555
+	width: fit-content
+	max-width: 350px
+	height: 50px
+	line-height: 50px
+	border-radius: 50px
+	display: block
+	text-align: center
+	margin: 20px auto 0
+	font-size: 20px
+	cursor: pointer
+	outline: none
+	border: 1px solid rgba(0,0,0,0.15)
+	transition: .15s ease-in-out
 	font-family: MyriadSetProThin, sans-serif
-	z-index: 1003
-	&:before
-		content: ''   
-		display: block
-		height: 100%
-		width: 100%
-		position: absolute
-		background: linear-gradient(to top, #e060ff, #996cea)
-		border-radius: inherit
-		top: 0
-		left: 0
-		opacity: 0
-		transition: all .25s ease-in-out
-		z-index: -100
-		cursor: pointer
 	&:hover,&:focus
 		text-decoration: none
-		color: #fff
-		box-shadow: 0 2px 5px rgba(0,0,0,0.5)
-		background-color: #e060ff
-		border: none
 		outline: none
-		cursor: pointer
-		&:before
-			opacity: .55
+		color: #000
+		border: 1px solid rgba(0,0,0,0.3)
+.small_btn
+	height: 40px
+	line-height: 40px
+	padding-left: 20px
+	padding-right: 20px
+	border: 1px solid rgba(0,0,0,0.3)
+	border-radius: 20px
 .big_btn
-	display: block
-	padding: 10px 30px
-	font-size: 28px
-	border-radius: 35px
-	cursor: pointer
+	font-size: 150%
+	height: 60px
+	line-height: 60px
+	padding-left: 30px
+	padding-right: 30px
+.yellow_btn
+	background-color: #ffcc00
+	color: #fafafa
+	border-color: #ffcc00
+	box-shadow: 0 1px 3px rgba(0,0,0,0.15)
+	&:hover,&:focus
+		box-shadow: 0 1px 3px rgba(0,0,0,0.35)
+		border-color: rgba(0,0,0,.15)
+		color: #fff
 .cta_text
 	font-size: 22px
 	line-height: 1.1
@@ -451,7 +377,7 @@ input.btn-primary
 	h2
 		text-align: right
 	span, small, mark
-		background: #ffcc00 // --- yellow
+		background: #3498db  
 .iphone_x img 
 	width: 85%
 	margin: auto
@@ -490,6 +416,7 @@ input.btn-primary
 			background-color: #3498db // --- blue
 	.big_btn
 		margin: 0 auto
+		width: 75%
 .ipad_wrapper
 	position: relative
 	.ipad_image
@@ -1109,220 +1036,122 @@ footer
 		background: rgba(255,255,255, .1)
 		z-index: 1
 		transform: skewY(-5deg) scale(2)
+.intro_text
+	margin: 40px 0
+	color: #555
+	h1
+		margin-bottom: 40px
+		font-size: 44px
+		span
+			padding: 7px 14px
+			border-top: 2px solid rgba(0,0,0,0.1)
+			border-bottom: 2px solid rgba(0,0,0,0.1)
 .subscribe_me
 	margin: 40px 0 20px
 	.caption
 		position: relative
+		color: rgba(0,0,0, .5)
 		height: auto
-		background: linear-gradient(-45deg, #fe0847, #feae3f);
+		background: #fff
+		border: 1px solid rgba(0,0,0,0.1)
 		border-radius: 0
 		margin: 0 auto
-		padding: 40px 20px
-		box-shadow: 0 0 40px rgba(0,0,0,0.5)		
+		padding: 20px
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1)
 		transition: .5s ease-in-out
 		overflow: hidden
-		&:before
-			content: ''
-			position: absolute
-			bottom: 0
-			left: 0
-			width: 100%
-			height: 40%
-			background: rgba(255,255,255, .1)
-			z-index: 1
-			transform: skewY(-5deg) scale(1.5)
 		&:hover
-			box-shadow: 0 0 40px rgba(0,0,0,0.75)
-
+			box-shadow: 0 1px 5px rgba(0,0,0,0.2)
 		h4
 			position: relative
-			margin: 20px 0 0 
+			margin: 15px 0
 			padding: 0
 			z-index: 2
-			color: #fff
+			color: rgba(0,0,0, .5)
 			font-size: 32px				
 		ul
 			margin: 0 0 20px
 			padding: 0
 			list-style: none
 			li
-				color: #fff
+				color: rgba(0,0,0, .65)
 				margin: 0 0 10px
 				padding: 0
 				font-size: 20px
 				line-height: 20px
 				font-family: MyriadSetProThin, sans-serif
-.cart_btn
-	position: relative
-	z-index: 2
-	background: #fff
-	color: #555
-	width: 75%
-	height: 50px
-	line-height: 50px
-	border-radius: 50px
-	display: block
-	text-align: center
-	margin: 20px auto 0
-	font-size: 20px
-	cursor: pointer
-	box-shadow: 0 5px 10px rgba(0, 0, 0, .3)
-	&:hover
-		text-decoration: none
-		transform: scale(1.03)
-		color: #000
+		.fa-check
+			color: #37E388
+	.custom_btn
+		width: 75%
 .subscribe_image
 	margin: 0 auto
 	width: 128px
 	height: 128px
 	padding: 30px
 	border-radius: 50%
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, .3)
+	box-shadow: 0 3px 3px rgba(0,0,0,0.15)
 .price
 	position: relative
 	z-index: 2
-	padding: 20px 0 0
-	color: #fff
-	font-size: 44px
+	color: #555
+	font-size: 54px
 	font-family: MyriadProBold
 	span
 		margin: 0
 		padding: 20px 0
-		color: #fff
+		color: #555
 		font-size: 44px
+		padding: 0
 	.price-new
 		position: absolute
-		font-size: 50px
-		top: -28px
+		font-size: 54px
+		top: -20px
+		color: #fff
+		padding: 0 5px
+		text-shadow: 0 10px 10px rgba(0,0,0, .25)
+		background-color: rgba(255, 204, 0, .75)
 		text-align: center
-		margin-left: -10px
+		line-height: 1
+		margin-left: -13px
 		transform: rotate(-5deg)
-		color: #ffcc00
-		text-shadow: 0 10px 10px rgba(0,0,0, .5)
 	.price-old
 		text-decoration: line-through
-.col-sm-4
-	&:nth-child(1)
-		.caption, .image
-	     	background: linear-gradient(-45deg, #f403d1, #645bf6)
-	&:nth-child(2)
-		.caption, .image
-	     	background: linear-gradient(-45deg, #ffec61, #f321d7)
-	&:nth-child(3)
-		.caption, .image
-	     	background: linear-gradient(-45deg, #24ff72, #9a4eff)
-	&:nth-child(4)
-		.caption, .image
-	     	background: linear-gradient(-45deg, #f403d1, #645bf6)
-	&:nth-child(5)
-		.caption, .image
-	     	background: linear-gradient(-45deg, #ffec61, #f321d7)
-	&:nth-child(6)
-		.caption, .image
-	     	background: linear-gradient(-45deg, #24ff72, #9a4eff) 
-
+		text-decoration-color: #ff681e
 // SUBSCRIBTION PLAN PAGE
-.subscribe_plan_bg
-	height: 1000px
-	width: 100vw
-	position: absolute
-	z-index: -100
-	background-color: #BF55EC
-	background: linear-gradient(-45deg, #fe0847, #feae3f);
-	top: 0
-	left: 0
-	overflow: hidden
-	&:before
-		content: ''
-		position: absolute
-		bottom: -20%
-		left: 0
-		width: 100%
-		height: 40%
-		background: rgba(255,255,255, .1)
-		z-index: 1
-		transform: skewY(-5deg) scale(2)
-.subscribe_top
-	margin: 60px auto 40px
-	padding: 30px 10px 30px  
-	color: rgba(0,0,0,.5)
-	background: linear-gradient(-45deg, #ffffff, #ededed)
-	box-shadow: 0 0 40px rgba(0,0,0,0.5)
-	border-radius: 0
-	.caption
-		position: relative
-		height: auto
-		text-align: center
-		border-radius: 0
-		background: linear-gradient(-45deg, #f403d1, #645bf6)
-		box-shadow: 0 0 40px rgba(0,0,0,0.5)
-		overflow: hidden
-		&:before
-			content: ''
-			position: absolute
-			bottom: -20%
-			left: 0
-			width: 100%
-			height: 40%
-			background: rgba(255,255,255, .1)
-			z-index: 1
-			transform: skewY(-5deg) scale(2)
-
-		h1
-			font-family: MyriadProBold, sans-serif
-			font-size: 44px
-			margin-top: 30px
-			color: #fff
-		.subscribe_price
-			margin-top: 0		
-			span
-				font-size: 54px
-			.price-new
-				font-size: 60px
-				top: -38px
-	.row
-		margin-right: 15px
-		margin-left: 15px
-.specification
-	border-radius: 0
-	margin-left: 5px
-	h4
-		margin-top: 20px
-		font-size: 32px
-	.fa
-		left: -33px
-		top: 3px
-		position: absolute
-.fa_cicrled
-	color: #fff
-	font-size: 20px
-	line-height: 20px
-	border-radius: 50%
-	background-color: #37E388
-	padding: 5px 5px
-.fa_relative
-	position: relative
+.details_wrapper
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1)
+	border: 1px solid rgba(0,0,0,0.1)
+	padding: 30px 0 10px
+	margin-bottom: 40px
+	background-color: #fff
+	.subscribe_image
+		width: 200px
+		height: 200px
+		padding: 40px
+		margin: 10px auto 40px
+	.subscribe_price		
+		span
+			font-size: 52px
+		.price-new
+			font-size: 60px
+			top: -30px
+			margin-left: -18px
 .custom_table
 	margin: 0
 	tbody+tbody
 		border: none
 		margin-bottom: 10px
 	>tbody
-
-		>.secondary_tr>td
-			border: none
-			color: rgba(0, 0, 0, .35)
 		>tr
 			margin-bottom: 10px
-			border-bottom: 1px solid rgba(0,0,0,.1)
-			&:nth-last-child
-				border-bottom: none
+			border-bottom: 1px solid #fff
 			>td
 				margin-bottom: 10px
-				color: grba(0,0,0,.5)
-				padding: 8px 2px
+				color: rgba(0,0,0,.5)
+				padding: 10px 10px 8px
 				border: none
-				background-color: #f2f2f2	
+				background-color: #f2f2f2
 			>.td-price-new-heading
 				color: #ff681e
 				font-size: 20px
@@ -1331,85 +1160,81 @@ footer
 				font-size: 32px
 				color: #ffcc00
 				padding-top: 0
-				line-height: 1.2
-			>.td-price
-				text-decoration: line-through
-				font-size: 20px
-			>.td-price-old
-				text-decoration: line-through
-				font-family: MyriadProBold, sans-serif
-				font-size: 20px
-
-
-
-.description
-	color: rgba(0,0,0,.4)
-	border-radius: 0
-	box-shadow: 0 0 40px rgba(0,0,0,0.5)
-	background: linear-gradient(-45deg, #ffffff, #ededed)
-	padding: 5px 13px
-	p
-		text-align: justify
-		margin-top: 10px
-		padding: 20px
-		olor: rgba(0,0,0,.4)
-		border: 1px solid rgba(0,0,0,.1)
+				line-height: 1.3
+				.fa
+					top: 6px
+		>.secondary_tr>td
+			border: none
+			color: rgba(0, 0, 0, .35)
+.specification
+	margin-bottom: 20px
+	h4
+		margin-top: 0
+		font-size: 22px
+		text-indent: 10px
+	.fa
+		left: -33px
+		top: 4px
+		position: absolute
+.fa_cicrled
+	color: #fff
+	font-size: 20px
+	border-radius: 50%
+	background-color: #37E388
+	padding: 5px 5px
+.fa_relative
+	position: relative
 .product
-	background: linear-gradient(-45deg, #ffffff, #ededed) 
-	box-shadow: 0 0 40px rgba(0,0,0,0.5)
-	width: 65%
-	margin-right: 15px
-	#product
-		color: rgba(0,0,0,.4)
+	#accordion
+		margin-top: 20px
 	.card
-		padding: 6px 13px 0
 		.text-danger
 			margin: 1%
 		.card-header
 			background-color: #f2f2f2
 			border-bottom: 1px solid rgba(0,0,0,.1)
 			margin-bottom: 10px
-			margin-top: -10px	
+			margin-top: -10px
 			label
 				font-size: 22px
-				width: 100%				
+				width: 100%
+				padding: 4px 4px 0 4px	
+				margin-bottom: 2px	
 				a
 					color: rgba(0,0,0,.7)
 					position: relative
 					display: block
 					width: 100%
-					color: rgba(0,0,0,.7)
 					&:after
 						content: ''
 						display: block
 						position: absolute
 						height: 1px
-						right: 10px
-						top: 16px
+						right: 0
+						top: 13px
 						width: 16px
 						transform: rotate(45deg)
-						background-color: rgba(0,0,0,.7)
+						background-color: rgba(0,0,0,.8)
 						transition: .15s ease-in-out
 					&:before
 						content: ''
 						position: absolute
 						display: block
 						height: 1px			
-						top: 16px
-						right: 10px
+						top: 13px
+						right: 0
 						width: 16px
 						transform: rotate(-45deg)
-						background-color: rgba(0,0,0,.7)
+						background-color: rgba(0,0,0,.8)
 						transition: .15s ease-in-out
 					&[aria-expanded="false"]
-						color: rgba(0,0,0,.3)
+						color: rgba(0,0,0,.5)
 						&:after
 							transform: rotate(90deg)
-							background-color: rgba(0,0,0,.3)
+							background-color: rgba(0,0,0,.5)
 						&:before
 							transform: rotate(0)
-							background-color: rgba(0,0,0,.3)
-
+							background-color: rgba(0,0,0,.5)
 		textarea
 			resize: vertical
 			min-height: 100px
@@ -1422,11 +1247,11 @@ footer
 	.form-control
 		width: 98%
 		margin-left: 1%
+	.custom_btn
+		font-size: 150%
+		width: 75%
 
-
-
-
-
+// CONTACT PAGE
 
 
 @import "media"

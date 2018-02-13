@@ -7,14 +7,14 @@
 				<img src="catalog/view/theme/mytheme/image/iphone-x.png" title="iphone-x" alt="instagram app" class="img-responsive">
 			</div>
 			<div class="col-sm-6 col-md-6 pull-right">
-				<div class="nav pull-right text-center">
+				<div class="nav pull-right">
 					<ul class="list-inline">
 						<?php if ($logged) { ?>
-						<li><a href="<?php echo $account; ?>" class="def_btn sm_btn"><?php echo $text_account; ?></a></li>
-						<li><a href="<?php echo $logout; ?>" class="def_btn sm_btn"><?php echo $text_logout; ?></a></li>
+						<li><a href="<?php echo $account; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_account; ?></a></li>
+						<li><a href="<?php echo $logout; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_logout; ?></a></li>
 						<?php } else { ?>
-						<li><a href="<?php echo $login; ?>" class="def_btn sm_btn"><?php echo $text_login; ?></a></li>
-						<li><a href="<?php echo $register; ?>" class="def_btn sm_btn"><?php echo $text_register; ?></a></li>
+						<li><a href="<?php echo $login; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_login; ?></a></li>
+						<li><a href="<?php echo $register; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_register; ?></a></li>
 						<?php } ?>
 					</ul>
 				</div>
@@ -22,7 +22,7 @@
 				<h2 class="focused"><span>Перевод <small>и</small> локализация&nbsp;<br><small>&nbsp;для</small> <mark>instagram, facebook,&nbsp;</mark><br>&nbsp;<mark>twitter, youtube...</mark>&ensp;</span></h2>
 				<div class="pull-right cta_wrapper">
 					<p class="cta_text text-center">пробная подпискa<br>на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
-					<a href="#" class="def_btn big_btn">Активировать</a>
+					<a href="#" class="custom_btn yellow_btn big_btn">Активировать</a>
 				</div>
 			</div>
 		</div>
@@ -66,11 +66,11 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-4 cta_wrapper">
 				<p class="cta_text text-center">Оформляй пробную<br>подписку на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
-				<a href="#" class="def_btn big_btn">Активировать</a>
+				<a href="#" class="custom_btn yellow_btn big_btn">Активировать</a>
 			</div>
 			<div class="col-md-3 col-sm-4 cta_wrapper">
 				<p class="cta_text text-center">или активируй<br>подходящий для<br>твоих нужд план</p>
-				<a href="#" class="def_btn big_btn">Все планы</a>
+				<a href="#" class="custom_btn yellow_btn big_btn">Все планы</a>
 			</div>
 		</div>		
 	</section>

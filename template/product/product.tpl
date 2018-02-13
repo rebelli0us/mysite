@@ -1,67 +1,72 @@
 <?php echo $header; ?>
-
 <div class="container">
-  <div class="subscribe_plan_bg"></div>
-  <section class="subscribe_top">
-    <div class="row">        
-      <div class="col-md-3 caption">
-        <div class="subscribe_image">     
-          <?php if ($thumb) { ?>
-          <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"  class="img-responsive" />
-          <?php } ?>
-        </div>
-        <h1><?php echo $heading_title; ?></h1>
-        <?php if ($price) { ?> 
-        <p class="subscribe_price price">
-          <?php if (!$special) { ?>
-          <?php echo $price; ?>
-          <?php } else { ?>
-          <span class="price-new"><?php echo $special; ?></span> <span class="price-old"><?php echo $price; ?></span>
-          <?php } ?>                  
-        </p>
-        <?php } ?>
-      </div> 
-      <?php if ($attribute_groups) { ?>
-      <div class="col-md-9">
-        <div class="specification">
-          <h4 class="text-center"><?php echo $tab_attribute; ?> "<?php echo $heading_title; ?>"</h4>
-          <table class="table custom_table">
-            <tbody>
-              <?php foreach ($attribute_groups as $attribute_group) { ?>
-              <tr>
-                <td><?php echo $attribute_group['name']; ?>:</td>
-                <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-                <td class="fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $attribute['name']; ?></td>
-                <?php } ?>
-              </tr>          
-              <?php } ?>
-              <?php if ($price) { ?> 
-              <?php if (!$special) { ?>
-              <tr>                
-                <td class="td-price">Стандартная цена:</td>
-                <td class="td-price-old fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $price; ?></td>
-              </tr>                
-              <?php } else { ?>
-              <tr>                
-                <td class="td-price">Стандартная цена:</td>
-                <td class="td-price-old fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $price; ?></td>
-              </tr>
-              <tr>                
-                <td class="td-price-new-heading">Цена со скидкой:</td>
-                <td class="td-price-new fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $special; ?></td>
-              </tr>                
-              <?php } ?>                  
-              <?php } ?>
-            </tbody>
-          </table>
-        </div>
-      </div>
+  <div class="row">
+    <?php echo $content_top; ?>
+    <div class="intro_text text-center col-md-12"> 
+      <h1><span><?php echo $heading_title; ?></span></h1>
+      <?php if ($description) { ?>
+        <?php echo $description; ?> 
       <?php } ?>
     </div>
-  </section>
-  <div class="row options_wrapper breadcrumb"">
-    <div class="col-md-8 product">
-      <div id="product">  
+  </div>
+  <div class="row details_wrapper">    
+    <div class="col-md-3">
+      <div class="subscribe_image">     
+        <?php if ($thumb) { ?>
+        <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"  class="img-responsive" />
+        <?php } ?>
+      </div>
+      <?php if ($price) { ?> 
+      <p class="subscribe_price price text-center">
+        <?php if (!$special) { ?>
+        <?php echo $price; ?>
+        <?php } else { ?>
+        <span class="price-new"><?php echo $special; ?></span> <span class="price-old"><?php echo $price; ?></span>
+        <?php } ?>                  
+      </p>
+      <?php } ?>
+    </div> 
+    <?php if ($attribute_groups) { ?>
+    <div class="col-md-9">
+      <div class="specification">
+        <h4><?php echo $tab_attribute; ?> "<?php echo $heading_title; ?>":</h4>
+        <table class="table custom_table">
+          <tbody>
+            <?php foreach ($attribute_groups as $attribute_group) { ?>
+            <tr>
+              <td><?php echo $attribute_group['name']; ?>:</td>
+              <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+              <td class="fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $attribute['name']; ?></td>
+              <?php } ?>
+            </tr>          
+            <?php } ?>
+            <?php if ($price) { ?> 
+            <?php if (!$special) { ?>
+            <tr>                
+              <td class="td-price">Стандартная цена:</td>
+              <td class="td-price-old fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $price; ?></td>
+            </tr>                
+            <?php } else { ?>
+            <tr>                
+              <td class="td-price">Стандартная цена:</td>
+              <td class="td-price-old fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $price; ?></td>
+            </tr>
+            <tr>                
+              <td class="td-price-new-heading">Цена со скидкой:</td>
+              <td class="td-price-new fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $special; ?></td>
+            </tr>                
+            <?php } ?>                  
+            <?php } ?>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <?php } ?>    
+  </div>
+
+  <div class="row options_wrapper">
+    <div class="col-md-10 col-md-offset-1">
+      <div id="product" class="product">  
         <?php if ($options) { ?>
         <h3 class="text-center"><?php echo $text_option; ?></h3>
         <div id="accordion" role="tablist">
@@ -264,12 +269,10 @@
         <div class="form-group">
           <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
           <br />
-          <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
+          <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="custom_btn yellow_btn"><?php echo $button_cart; ?></button>
         </div>
       </div>
     </div>
-    <div class="col-md-4 description"><?php echo $description; ?></div>
-
   </div>
 
   <?php if ($products) { ?>      
@@ -298,7 +301,7 @@
             <?php } ?>
             <?php } ?>
           </ul>
-          <a onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');" class="cart_btn"><?php echo $button_cart; ?></a>
+          <a onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');" class="custom_btn"><?php echo $button_cart; ?></a>
         </div>
       </div>          
     </div>
@@ -379,7 +382,7 @@ $('#button-cart').on('click', function() {
       }
 
       if (json['success']) {
-        $('.breadcrumb').after('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+        $('.options_wrapper').after('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
         $('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
 

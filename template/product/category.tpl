@@ -1,10 +1,10 @@
 <?php echo $header; ?>
 <div class="container">
-  <div class="subscribe_bg"></div>
   <div class="row">
-    <div id="content" class="col-md-12"><?php echo $content_top; ?>
-      <div class="preview_text text-center"> 
-        <h1 class="focused"><span><?php echo $heading_title; ?></span></h1>
+    <div id="content" class="col-md-12">
+      <?php echo $content_top; ?>
+      <div class="intro_text text-center"> 
+        <h1><span><?php echo $heading_title; ?></span></h1>
         <?php if ($description) { ?>
           <?php echo $description; ?> 
         <?php } ?>
@@ -37,7 +37,7 @@
                 <?php } ?>                 
               <?php } ?>
               </ul>
-              <a href="<?php echo $product['href']; ?>" class="cart_btn "><?php echo $button_cart; ?></a>
+              <a href="<?php echo $product['href']; ?>" class="custom_btn "><?php echo $button_cart; ?></a>
             </div>
           </div>          
         </div>
