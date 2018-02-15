@@ -37,7 +37,7 @@
                 <?php } ?>                 
               <?php } ?>
               </ul>
-              <a href="<?php echo $product['href']; ?>" class="custom_btn "><?php echo $button_cart; ?></a>
+              <a href="<?php echo $product['href']; ?>" class="custom_btn yellow_btn"><?php echo $button_cart; ?></a>
             </div>
           </div>          
         </div>

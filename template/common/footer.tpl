@@ -1,5 +1,5 @@
 <footer class="main-footer">
-	<div class="container">
+	<div class="container footer-container">
 		<div class="row">
 			<div class="col-md-6 first_column">
 				<ul class="footer_contact">
@@ -35,13 +35,13 @@
 			<div class="col-md-3">				
 				<ul>
 					<li class="footer-title">FAQ:</li>
-					<li><a href="http://locco.me/chto-takoe-lokalizaciya">Что такое локализация?</a></li>
-					<li><a href="http://locco.me/chto-takoe-perevod-po-zaporosu">Что такое перевод по запоросу?</a></li>
-					<li><a href="http://locco.me/kak-oformit-podpisku-na-servis">Как оформить подписку на сервис?</a></li>
-					<li><a href="http://locco.me/kak-oplatit-uslugu">Как оплатить услугу?</a></li>
-					<li><a href="http://locco.me/kto-delaet-perevod">Кто делает перевод?</a></li>
-					<li><a href="http://locco.me/na-kakie-yazyki-est-perevod">На какие языки есть перевод?</a></li>
-					<li><a href="http://locco.me/kak-popast-v-komandu-locco-me">Как попасть в команду locco.me?</a></li>
+					<li><a href="/locco/index.php?route=information/information&information_id=10">Что такое локализация?</a></li>
+					<li><a href="/locco/index.php?route=information/information&information_id=11">Что такое перевод по запоросу?</a></li>
+					<li><a href="/locco/index.php?route=information/information&information_id=12">Как оформить подписку на сервис?</a></li>
+					<li><a href="/locco/index.php?route=information/information&information_id=13">Как оплатить услугу?</a></li>
+					<li><a href="/locco/index.php?route=information/information&information_id=14">Кто делает перевод?</a></li>
+					<li><a href="/locco/index.php?route=information/information&information_id=15">На какие языки есть перевод?</a></li>
+					<li><a href="/locco/index.php?route=information/information&information_id=16">Как попасть в команду locco.me?</a></li>
 				</ul>
 			</div>
 		</div>

@@ -60,13 +60,13 @@
       <span class="follow-us">Следите за нами в:</span>
       <nav class="social_nav">
         <li class="fb_link"><a href="#" rel="nofollow" target="_blank"><span>Facebook</span><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li class="vk_link"><a href="#" rel="nofollow" target="_blank"><span>ВКонтакте</span><i class="fa fa-vk" aria-hidden="true"></i></a></li>
         <li class="ins_link"><a href="#" rel="nofollow" target="_blank"><span>Instagram</span><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li class="you_link"><a href="#" rel="nofollow" target="_blank"><span>YouTube</span><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-<!--         <li class="tw_link"><a href="#" rel="nofollow" target="_blank"><span>Twitter</span><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li class="lin_link"><a href="#" rel="nofollow" target="_blank"><span>LinkedIn</span><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-        <li class="gp_link"><a href="#" rel="nofollow" target="_blank"><span>Google+</span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>  
-        <li class="tel_link"><a href="#" rel="nofollow" target="_blank"><span>Telegram</span><i class="fa fa-telegram" aria-hidden="true"></i></a></li> -->
+        <!-- <li class="you_link"><a href="#" rel="nofollow" target="_blank"><span>YouTube</span><i class="fa fa-youtube" aria-hidden="true"></i></a></li> -->
+        <!-- <li class="vk_link"><a href="#" rel="nofollow" target="_blank"><span>ВКонтакте</span><i class="fa fa-vk" aria-hidden="true"></i></a></li> -->
+        <!-- <li class="tw_link"><a href="#" rel="nofollow" target="_blank"><span>Twitter</span><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+        <!-- <li class="gp_link"><a href="#" rel="nofollow" target="_blank"><span>Google+</span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>   -->
+        <!-- <li class="tel_link"><a href="#" rel="nofollow" target="_blank"><span>Telegram</span><i class="fa fa-telegram" aria-hidden="true"></i></a></li> -->
       </nav>
     </div>
   </header>

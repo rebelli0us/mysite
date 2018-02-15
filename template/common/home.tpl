@@ -10,11 +10,11 @@
 				<div class="nav pull-right">
 					<ul class="list-inline">
 						<?php if ($logged) { ?>
-						<li><a href="<?php echo $account; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_account; ?></a></li>
-						<li><a href="<?php echo $logout; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_logout; ?></a></li>
+						<li><a href="<?php echo $account; ?>" class="btn btn-primary"><?php echo $text_account; ?></a></li>
+						<li><a href="<?php echo $logout; ?>" class="btn btn-primary"><?php echo $text_logout; ?></a></li>
 						<?php } else { ?>
-						<li><a href="<?php echo $login; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_login; ?></a></li>
-						<li><a href="<?php echo $register; ?>" class="custom_btn yellow_btn small_btn"><?php echo $text_register; ?></a></li>
+						<li><a href="<?php echo $login; ?>" class="btn btn-primary"><?php echo $text_login; ?></a></li>
+						<li><a href="<?php echo $register; ?>" class="btn btn-primary"><?php echo $text_register; ?></a></li>
 						<?php } ?>
 					</ul>
 				</div>
@@ -64,11 +64,11 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-3 col-sm-4 cta_wrapper">
+			<div class="col-lg-3 col-md-4 col-sm-5 cta_wrapper">
 				<p class="cta_text text-center">Оформляй пробную<br>подписку на <sub>7</sub> дней<br>всего за <sub>$9.99</sub></p>
 				<a href="#" class="custom_btn yellow_btn big_btn">Активировать</a>
 			</div>
-			<div class="col-md-3 col-sm-4 cta_wrapper">
+			<div class="col-lg-3 col-md-4 col-sm-5 cta_wrapper">
 				<p class="cta_text text-center">или активируй<br>подходящий для<br>твоих нужд план</p>
 				<a href="#" class="custom_btn yellow_btn big_btn">Все планы</a>
 			</div>
@@ -174,33 +174,36 @@
 	</section>
 	<!-- CONTACT SECTION -->
 	<section class="row_wrapper contact_us">
+		<div id="map" class="google_map"></div>
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-			<div id="ask-us" class="ask-us-form">
-				<h3 class="text-center focused"><span>Связаться с нами</span></h3>  
-				<form class="ajax-form">      
-					<input type="hidden" name="project_name" value="locco.me">
-					<input type="hidden" name="admin_email" value="hello@locco.me">
-					<input type="hidden" name="form_subject" value="Контактная форма">      
-					<div class="form-group">
-						<textarea name="text" class="form-control" id="user-comment" required></textarea>
-						<label>Вопрос / комментарий / предложение</label>
-					</div>
-					<div>
-						<input class="form-control" type="text" name="FirstName" required autocomplete="off">
-						<label>Имя</label>
-					</div>
-					<div>
-						<input class="form-control" type="text" name="Email" required autocomplete="off">
-						<label>E-mail</label>
-					</div>
-					<button class="btn btn-primary">Отправить</button>
-				</form>
-				<!-- <div class="success">Спасибо!<br>Скоро придёт ответ на указанный email</div> -->
-			</div>
+			<div class="col-md-10 col-md-offset-1">
+				<div id="ask-us" class="ask_us_form">
+					<h3 class="text-center focused"><span>Связаться с нами</span></h3>  
+					<form class="ajax-form">      
+						<input type="hidden" name="project_name" value="locco.me">
+						<input type="hidden" name="admin_email" value="hello@locco.me">
+						<input type="hidden" name="form_subject" value="Контактная форма">      
+						<div>
+							<input class="form-control" type="text" name="FirstName" required autocomplete="off">
+							<label>Имя</label>
+						</div>
+						<div>
+							<input class="form-control" type="text" name="Email" required autocomplete="off">
+							<label>E-mail</label>
+						</div>
+						<div class="form-group textarea">
+							<textarea name="text" class="form-control" id="user-comment" required></textarea>
+							<label>Вопрос / комментарий / предложение</label>
+						</div>
+						<button class="btn btn-primary pull-right">Отправить</button>
+					</form>
+				</div>
 			</div>
 		</div>
 		<a href="#top_section" class="scroll_btn animated"></a>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChZM6lGUltpvmNkDEpLU3M_dsIIQ1ZsA0&callback=initMap">
+		</script>
 		<?php echo $footer; ?>
 	</section>
 </div>

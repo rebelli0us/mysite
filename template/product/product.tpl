@@ -301,7 +301,7 @@
             <?php } ?>
             <?php } ?>
           </ul>
-          <a onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');" class="custom_btn"><?php echo $button_cart; ?></a>
+          <a onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');" class="custom_btn yellow_btn"><?php echo $button_cart; ?></a>
         </div>
       </div>          
     </div>

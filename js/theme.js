@@ -26,34 +26,55 @@ $(document).ready(function(){
 		return false;
 	});
 
-});
+}); 
 
-var latitude = 50.439242,
-	longitude = 30.496362,
-	map_zoom = 18;
-
-var marker_url = '/image/icon-location.svg';
-
-var main_color = '#007148',
-	saturation_value= -1,
-	brightness_value= 1;
-
-var style= [ 
-	{
-		//Скрываем обозначение дорог на карте
-		featureType: 'road.highway',
-		elementType: 'labels',
-		stylers: [
-		    {visibility: "off"}
-		]
-	},
-	{
-		featureType: "road.highway",
-		elementType: "geometry.fill",
-		stylers: [
-			{ hue: main_color },
-			{ visibility: "on" }, 
-			{ lightness: brightness_value }, 
-			{ saturation: saturation_value }
-		]
-	}
+function initMap() {
+    var uluru = {lat: 50.439294, lng: 30.496373};
+    var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 14,
+		center: uluru,
+		mapTypeControl: false,
+		fullscreenControl: false,
+		streetViewControl: false,
+		scaleControl: false,
+		rotateControl: false,
+		styles: [
+	    {
+	        "stylers": [
+	            {
+	                "hue": "#31bfa3"
+	            },
+	            {
+	                "saturation": 0
+	            }
+	        ]
+	    },
+	    {
+	        "featureType": "road",
+	        "elementType": "geometry",
+	        "stylers": [
+	            {
+	                "lightness": 100
+	            },
+	            {
+	                "visibility": "simplified"
+	            }
+	        ]
+	    },
+	    {
+	        "featureType": "road",
+	        "elementType": "labels",
+	        "stylers": [
+	            {
+	                "visibility": "off"
+	            }
+	        ]
+	    }
+	]
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: 'image/icon-location.png'
+    });
+}

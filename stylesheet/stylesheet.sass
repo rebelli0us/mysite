@@ -25,6 +25,10 @@ h1,h2,h3,h4,h5,h6
 ::selection
 	color: #fff
 	background-color: #ffcc00
+b
+	font-family: MyriadSetProThin, sans-serif
+	font-weight: normal
+	font-style: italic
 // ----- HEADER ----- // 
 header
 	background: #fff
@@ -182,7 +186,8 @@ header
 .breadcrumb
 	margin-top: 40px
 	background-color: transparent
-	li
+	li 
+		visibility: hidden
 		a
 			color: #ff9b00
 			transition: all .25s ease-in-out
@@ -274,17 +279,18 @@ label
 	padding-right: 16px
 	transition: .15s ease-in-out
 .btn-primary
-	background-color: #ffcc00
+	background-color: #31bfa3
 	border-color: rgba(0,0,0,.05)
-	&:hover
-		border-color: rgba(0,0,0,.25)
-		box-shadow: 0 1px 3px rgba(0,0,0,0.15)
-		background-color: #ffcc00
+	&:hover,&:focus,&:active
+		border-color: rgba(0,0,0,.1)
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1)
+		background-color: #36d7b7
+		outline: none
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover
 	outline: none
 	border-color: rgba(0,0,0,.25)
 	box-shadow: 0 1px 3px rgba(0,0,0,0.15)
-	background-color: #ffcc00
+	background-color: #36d7b7
 .custom_btn
 	position: relative
 	z-index: 2
@@ -326,10 +332,11 @@ label
 	background-color: #ffcc00
 	color: #fafafa
 	border-color: #ffcc00
-	box-shadow: 0 1px 3px rgba(0,0,0,0.15)
+	box-shadow: 0 1px 3px rgba(0,0,0,0.05)
 	&:hover,&:focus
-		box-shadow: 0 1px 3px rgba(0,0,0,0.35)
-		border-color: rgba(0,0,0,.15)
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1)
+		border-color: rgba(0,0,0,.1)
+		background-color: #ffd400
 		color: #fff
 .cta_text
 	font-size: 22px
@@ -590,25 +597,32 @@ label
 		height: 40%
 		background: rgba(255,255,255, .1)
 		transform: skewY(-10deg) scale(1.5)
+	.google_map
+		height: 600px
+		width: 97vw
+		position: absolute
+		top: 0
+		left: 0
+	.ask_us_form
+		height: 500px
+		background-color: rgba(255, 204, 0, .55)
+		padding: 10px 30px
 	.focused
+		font-family: MyriadSetProThin, sans-serif
+		font-size: 28px
 		span
-			background: rgba(255, 204, 0, .85)
+			background: rgba(255, 204, 0, .75)
 	form
 		div
 			position: relative
 			z-index: 99
 	.form-group
-		width: 49%
-		float: left
-		margin-right: 2%
-		background-color: rgba(255, 204, 0, .85)
 		z-index: 100
 		textarea
-			min-height: 189px
+			min-height: 200px
 			background-color: transparent
 			resize: none
 	input
-		width: 49%
 		margin-bottom: 20px
 		height: 50px
 	label
@@ -620,48 +634,34 @@ label
 		pointer-events: none
 		transition: .25s ease-in-out
 	.form-control
-		border:
-				color: rgba(255, 204, 0, .55)
-				radius: 0
-		background: rgba(255, 204, 0, .85)
-		color: #fff
-		font-size: 20px
-		font-family: MyriadSetProThin, sans-serif
-		transition: all .25s ease-in-out 
+		background-color: transparent
+		border-color: #fff
+		border-top: none
+		border-right: none
+		border-left: none
+		box-shadow: none
+		transition: .25s ease-in-out
+		height: 45px
 		padding-top: 20px
-		&::placeholder
-			color: #fff
+		font-size: 18px
+		color: #fff
+		font-family: MyriadSetProThin, sans-serif
 		&:focus,&:valid 
-			border-color: rgba(255, 204, 0, 1)
-			background: rgba(255, 204, 0, 1)
-			box-shadow: 0 0 2px rgba(255, 204, 0, 1)
+			background-color: rgba(255, 204, 0, .75)
+			box-shadow: none
 			~ label
-				top: 4px
-				font-size: 17px
+				top: 2px
+				font-size: 16px
 				padding-left: 12px
 				color: rgba(255, 255, 255, 0.85)
-	.btn-primary
-		border: none
-		border-radius: 0
-		background: rgba(255, 204, 0, .85)
-		font-size: 24px
-		font-family: MyriadSetProThin, sans-serif
-		padding: 7px 20px
-		width: 49%
-		transition: all .25s ease-in-out
-		outline: none
-		box-shadow: none
-		color: #fff
-		&:hover,&:focus,&:active
-			background: rgba(255, 204, 0, 1)
-			outline: none
-			box-shadow: 0 0 2px rgba(255, 204, 0, 1)
-			&:before
-				opacity: 0
-
-	.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover
-		background: rgba(255, 204, 0, 1)
-		outline: none
+		&:hover
+			background-color: rgba(255, 204, 0, .75)
+	.textarea
+		border-top: 1px solid #fff
+		textarea
+			&:focus,&:valid 
+				~ label
+					top: 5px
 footer
 	margin-top: 100px
 	p 
@@ -1252,6 +1252,89 @@ footer
 		width: 75%
 
 // CONTACT PAGE
-
-
+.contact_page_map
+	height: 660px
+	width: 100%
+	top: 0
+	left: 0
+	position: absolute
+.contact_page
+	height: 65vh
+	padding-top: 5vh
+	color: #fff
+	font-family: MyriadSetProThin, sans-serif
+	#content
+		background-color: rgba(255, 204, 0, .55)
+		h1
+			font-size: 28px
+			color: #ffffff
+			span
+				background-color: rgba(255, 204, 0, .75)
+				padding: 4px 13px
+	form
+		padding: 10px 30px
+	.form-group
+		position: relative
+	input[type="text"]
+		background-color: transparent
+		border-color: #fff
+		border-top: none
+		border-right: none
+		border-left: none
+		box-shadow: none
+		transition: .25s ease-in-out
+		height: 45px
+		padding-top: 20px
+		font-size: 18px
+		color: #fff
+		&:hover
+			background-color: rgba(255, 204, 0, .75)
+		&:focus,&:valid
+			box-shadow: none
+			background-color: rgba(255, 204, 0, .75)
+			padding-top: 26px
+			~ label
+				top: -3px
+				font-size: 15px
+				color: rgba(255, 255, 255, 0.85)
+	textarea
+		background-color: transparent
+		border-color: #fff
+		resize: none		
+		border-left: none
+		border-right: none
+		box-shadow: none
+		transition: .25s ease-in-out
+		padding-top: 20px
+		font-size: 18px
+		color: #fff
+		&:hover
+			background-color: rgba(255, 204, 0, .75)
+		&:focus,&:valid
+			box-shadow: none
+			background-color: rgba(255, 204, 0, .75)
+			~ label
+				top: -3px
+				font-size: 15px
+				color: rgba(255, 255, 255, 0.85)
+	label
+		position: absolute
+		top: 14px
+		left: 12px
+		transition: .25s ease-in-out
+	.textarea
+		margin-top: 30px
+		label
+			top: 0px
+		.text-danger
+			position: static
+			padding-left: 12px
+			padding-top: 4px
+	.buttons
+		height: 50px
+	.text-danger
+		font-size: 16px
+		position: absolute
+		top: 48px
+		left: 12px
 @import "media"
