@@ -32,7 +32,7 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<h3 class="focused text-center"><span>Как это работает?</span></h3>
-				<p class="how_to">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti velit, aliquam sed dignissimos aspernatur eveniet enim. Aspernatur nostrum repellendus obcaecati cum, quae saepe, eveniet accusamus autem, alias dolorem nihil cumque?</p>
+				<p class="text_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti velit, aliquam sed dignissimos aspernatur eveniet enim. Aspernatur nostrum repellendus obcaecati cum, quae saepe, eveniet accusamus autem, alias dolorem nihil cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ab ducimus debitis officiis, magni cumque illum possimus. Ad iure quibusdam, nulla, accusamus deleniti excepturi voluptatem. Praesentium sapiente, libero quas perferendis.</p>
 			</div>
 		</div>
 		<div class="row">
@@ -77,40 +77,43 @@
 	<!-- FOR WHOM SECTION -->
 	<section class="row_wrapper for_whom">
 		<div class="row">
-			<h2 class="text-center focused"><span>Кому понадобится сервис <mark>locco</mark>.me?</span></h2>
+			<div class="col-md-10 col-md-offset-1">
+				<h2 class="text-center focused"><span>Кому понадобится сервис <mark>locco</mark>.me?</span></h2>
+				<p class="text_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti velit, aliquam sed dignissimos aspernatur eveniet enim. Aspernatur nostrum repellendus obcaecati cum, quae saepe, eveniet accusamus autem, alias dolorem nihil cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ab ducimus debitis officiis, magni cumque illum possimus. Ad iure quibusdam, nulla, accusamus deleniti excepturi voluptatem. Praesentium sapiente, libero quas perferendis.</p>
+			</div>
 			<div class="col-sm-6 clients">
 				<i class="fa fa-instagram"></i> 
 				<h3 class="h-instagram">instagram<small> / инстаграм</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+				<p class="text_social">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 			<div class="col-sm-6 clients"> 				
 				<i class="fa fa-facebook"></i> 
 				<h3 class="h-facebook">facebook<small> / фейсбук</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+				<p class="text_social">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6 clients">
 				<i class="fa fa-youtube"></i> 
 				<h3 class="h-youtube">youtube<small> / ютуб</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+				<p class="text_social">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 			<div class="col-sm-6 clients">
 				<i class="fa fa-telegram"></i> 
 				<h3 class="h-telegram">telegram<small> / телеграм</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+				<p class="text_social">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6 clients">
 				<i class="fa fa-twitter"></i> 
 				<h3 class="h-twitter">twitter<small> / твиттер</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+				<p class="text_social">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 			<div class="col-sm-6 clients">
 				<i class="fa fa-plus"></i> 
 				<h3 class="h-plus">other<small> / другие</small></h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
+				<p class="text_social">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iusto illo, corporis expedita, doloribus cum nobis in provident ipsum quidem, voluptates maiores autem harum praesentium! Maxime sit, rerum praesentium nesciunt!</p>
 			</div>
 		</div>
 	</section>

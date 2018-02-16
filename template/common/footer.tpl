@@ -35,13 +35,13 @@
 			<div class="col-md-3">				
 				<ul>
 					<li class="footer-title">FAQ:</li>
-					<li><a href="/locco/index.php?route=information/information&information_id=10">Что такое локализация?</a></li>
-					<li><a href="/locco/index.php?route=information/information&information_id=11">Что такое перевод по запоросу?</a></li>
-					<li><a href="/locco/index.php?route=information/information&information_id=12">Как оформить подписку на сервис?</a></li>
-					<li><a href="/locco/index.php?route=information/information&information_id=13">Как оплатить услугу?</a></li>
-					<li><a href="/locco/index.php?route=information/information&information_id=14">Кто делает перевод?</a></li>
-					<li><a href="/locco/index.php?route=information/information&information_id=15">На какие языки есть перевод?</a></li>
-					<li><a href="/locco/index.php?route=information/information&information_id=16">Как попасть в команду locco.me?</a></li>
+					<li><a href="/locco/index.php?route=extension/module/faq#collapse1" target="_blank">Что такое локализация?</a></li>
+					<li><a href="/locco/index.php?route=extension/module/faq#collapse2" target="_blank">Что такое перевод по запоросу?</a></li>
+					<li><a href="/locco/index.php?route=extension/module/faq#collapse3" target="_blank">Как оформить подписку на сервис?</a></li>
+					<li><a href="/locco/index.php?route=extension/module/faq#collapse4" target="_blank">Как оплатить услугу?</a></li>
+					<li><a href="/locco/index.php?route=extension/module/faq#collapse5" target="_blank">Кто делает перевод?</a></li>
+					<li><a href="/locco/index.php?route=extension/module/faq#collapse6" target="_blank">На какие языки есть перевод?</a></li>
+					<li><a href="/locco/index.php?route=extension/module/faq#collapse7" target="_blank">Как попасть в команду locco.me?</a></li>
 				</ul>
 			</div>
 		</div>

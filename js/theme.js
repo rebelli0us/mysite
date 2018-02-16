@@ -25,6 +25,13 @@ $(document).ready(function(){
 		$('html').animate({'scrollTop': 0}, 1000);
 		return false;
 	});
+	$(function() {
+		if (location.hash.startsWith('#collapse') && window.location.hash.length > 0) {
+			var a = 'a[href="' + window.location.hash + '"]';
+			$(a).click();
+			$('#accordion ' + a).click();
+		}
+	});
 
 }); 
 
