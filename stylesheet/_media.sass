@@ -1,6 +1,8 @@
 @import "bourbon"
 @import "vars"
-
+// W3D)tne@lS8x
+// y4sS696kn6~U
+// 0ue,#c5Psg~,
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -49,6 +51,8 @@
 		font-size: 28px
 	.big_btn
 		font-size: 24px
+	.subscribe_me .custom_btn
+		width: 100%
 	footer 
 		margin-top: 60px
 		.second_column
@@ -74,12 +78,14 @@
 				left: 0
 		.footer_contact
 			margin-left: 0
+	.contact_page
+		padding-top: 20px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.main-container
 		padding:
-			right: 0
 			left: 0
+			right: 0
 	.landing
 		min-height: auto
 		.row
@@ -185,38 +191,74 @@
 			font-size: 24px
 
 		p
-			font-size: 18px
-	
+			font-size: 18px	
 	.subscribe_me
 		.caption
 			width: 75%
+	// .google_map
+	// 	width: 105%
+	#map
+		z-index: 0
+		&:before
+			content: ""
+			display: block
+			width: 100%
+			height: 100%
+			z-index: 1
+			position: absolute
+			top: 0
+			left: 0
+			background-color: rgba(0,0,0,.15)
+	.contact_page
+		padding-top: 20px
+		input[type="text"], textarea
+			&:focus,&:valid
+				~label
+					top: 0
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.row_wrapper
+		padding-right: 10px
+		padding-left: 10px
 	.focused
 		font-size: 23px
 		span
 			padding: 5px 7px
+	.text_info
+		padding: 10px
+	.intro_text
+		h1
+			font-size: 36px
 	.sm_btn
 		font-size: 16px
 		padding: 7px 15px
 	.landing
+		padding-top: 13px
 		.pull-right
 			float: none!important
 		.big_logo
 			margin-top: 20px
+		h2
+			text-align: center
 	.about_us
-		.focused
+		padding-top: 10px
+		padding-bottom: 30px
+		.focused_cta
 			margin-bottom: 0
 	.for_whom
-		p 
-			padding: 0 10px
+		padding-top: 10px
+		padding-bottom: 30px
 		h3
 			font-size: 30px
+		.text_social
+			padding: 0
 	.contact_us
 		.form-control
 			font-size: 20px
+		footer
+			margin-top: 60px
 	.review_content
-		padding: 20px 15px 20px 15px
+		padding: 10px 10px 20px
 	header
 		width: 100%
 		left: -100%
@@ -244,6 +286,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 769px)
+	.container
+		padding-left: 60px
 	header
 		overflow: hidden
 		&:hover

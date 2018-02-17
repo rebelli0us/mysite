@@ -35,7 +35,7 @@
       <?php if ($articles) { ?>
       <div class="row">
         <?php foreach ($articles as $article) { ?>
-        <div class="product-layout col-md-6 col-sm-10 ">
+        <div class="product-layout col-md-6">
           <div class="product-thumb transition bloggo">
             <?php if ($article['thumb']) { ?>
               <div class="image" ><a href="<?php echo $article['href']; ?>" style="background-image: url('<?php echo $article['original']; ?>')"></a></div>

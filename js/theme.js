@@ -45,6 +45,7 @@ function initMap() {
 		streetViewControl: false,
 		scaleControl: false,
 		rotateControl: false,
+		zoomControl: false,
 		styles: [
 	    {
 	        "stylers": [

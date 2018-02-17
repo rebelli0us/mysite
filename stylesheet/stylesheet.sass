@@ -418,6 +418,9 @@ label
 		font-size: 22px
 		font-family: MyriadSetProSemiBold, sans-serif
 	.focused
+		span, small, mark
+			background-color: #3498db // --- blue
+	.focused_cta
 		z-index: 2
 		position: relative
 		span, small, mark
@@ -600,7 +603,7 @@ label
 		transform: skewY(-10deg) scale(1.5)
 	.google_map
 		height: 600px
-		width: 97vw
+		width: 100%
 		position: absolute
 		top: 0
 		left: 0
@@ -1260,12 +1263,13 @@ footer
 	left: 0
 	position: absolute
 .contact_page
-	height: 65vh
-	padding-top: 5vh
+	height: 700px
+	padding-top: 40px
 	color: #fff
 	font-family: MyriadSetProThin, sans-serif
 	#content
 		background-color: rgba(255, 204, 0, .55)
+		padding-top: 20px
 		h1
 			font-size: 28px
 			color: #ffffff

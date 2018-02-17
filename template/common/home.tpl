@@ -4,11 +4,11 @@
 	<section id="top_section" class="row_wrapper landing">
 		<div class="row">
 			<div class="col-sm-6 iphone_x hidden-xs">
-				<img src="catalog/view/theme/mytheme/image/iphone-x.png" title="iphone-x" alt="instagram app" class="img-responsive">
+				<img src="catalog/view/theme/mytheme/image/iphone.png" title="iphone-x" alt="instagram app" class="img-responsive">
 			</div>
 			<div class="col-sm-6 col-md-6 pull-right">
 				<div class="nav pull-right">
-					<ul class="list-inline">
+					<ul class="list-inline text-center">
 						<?php if ($logged) { ?>
 						<li><a href="<?php echo $account; ?>" class="btn btn-primary"><?php echo $text_account; ?></a></li>
 						<li><a href="<?php echo $logout; ?>" class="btn btn-primary"><?php echo $text_logout; ?></a></li>
@@ -31,7 +31,7 @@
 	<section class="row_wrapper about_us">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<h3 class="focused text-center"><span>Как это работает?</span></h3>
+				<h2 class="focused text-center"><span>Как это работает?</span></h3>
 				<p class="text_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti velit, aliquam sed dignissimos aspernatur eveniet enim. Aspernatur nostrum repellendus obcaecati cum, quae saepe, eveniet accusamus autem, alias dolorem nihil cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ab ducimus debitis officiis, magni cumque illum possimus. Ad iure quibusdam, nulla, accusamus deleniti excepturi voluptatem. Praesentium sapiente, libero quas perferendis.</p>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 		<div class="row">
 			<div class="col-sm-12 ipad_wrapper">
 				<img src="catalog/view/theme/mytheme/image/ipad.png" alt="apple ipad" class="hidden-xs img-responsive ipad_image" >
-				<h2 class="focused">&ensp;<span>Узнай <small>как</small> работает <mark>locco</mark>.me&nbsp;<br>&nbsp;- первый <mark>сервис-переводчик</mark>&ensp;<br>&nbsp;<small>для</small> <mark>социальных сетей</mark></span></h3>
+				<h2 class="focused focused_cta">&ensp;<span>Узнай <small>как</small> работает <mark>locco</mark>.me&nbsp;<br>&nbsp;- первый <mark>сервис-переводчик</mark>&ensp;<br>&nbsp;<small>для</small> <mark>социальных сетей</mark></span></h3>
 			</div>
 		</div>
 		<div class="row">
