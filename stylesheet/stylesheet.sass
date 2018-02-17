@@ -1,6 +1,8 @@
 @import "bourbon"
 @import "vars"
 @import "fonts"
+@import "catalog/view/theme/mytheme/stylesheet/mfp-zoom-in"
+
 
 //Custom styles here
 body
@@ -1400,6 +1402,23 @@ footer
 			border-top: none
 	p
 		line-height: 1.7
+
+// SITEMAP //
+.custom_ul
+	list-style: none
+	padding-left: 0
+	ul
+		list-style: none
+	li
+		margin-top: 20px
+		a
+			border: 1px solid rgba(0,0,0,.05)
+			border-radius: 20px
+			color: #9e9e9e
+			background-color: rgba(0,0,0,.025)
+			padding: 8px 13px
+			&:hover
+				background: #ededed
 
 
 @import "media"

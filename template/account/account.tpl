@@ -17,21 +17,21 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h2><?php echo $text_my_account; ?></h2>
-      <ul class="list-unstyled">
+      <h3><?php echo $text_my_account; ?></h2>
+      <ul class="custom_ul">
         <li><a href="<?php echo $edit; ?>"><?php echo $text_edit; ?></a></li>
         <li><a href="<?php echo $password; ?>"><?php echo $text_password; ?></a></li>
       </ul>
       <?php if ($credit_cards) { ?>
-      <h2><?php echo $text_credit_card; ?></h2>
-      <ul class="list-unstyled">
+      <h3><?php echo $text_credit_card; ?></h2>
+      <ul class="custom_ul">
         <?php foreach ($credit_cards as $credit_card) { ?>
         <li><a href="<?php echo $credit_card['href']; ?>"><?php echo $credit_card['name']; ?></a></li>
         <?php } ?>
       </ul>
       <?php } ?>
-      <h2><?php echo $text_my_orders; ?></h2>
-      <ul class="list-unstyled">
+      <h3><?php echo $text_my_orders; ?></h2>
+      <ul class="custom_ul">
         <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
         <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
         <?php if ($reward) { ?>
@@ -41,8 +41,8 @@
         <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
         <li><a href="<?php echo $recurring; ?>"><?php echo $text_recurring; ?></a></li>
       </ul>
-      <h2><?php echo $text_my_newsletter; ?></h2>
-      <ul class="list-unstyled">
+      <h3><?php echo $text_my_newsletter; ?></h2>
+      <ul class="custom_ul">
         <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
       </ul>
       <?php echo $content_bottom; ?></div>

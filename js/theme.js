@@ -32,7 +32,21 @@ $(document).ready(function(){
 			$('#accordion ' + a).click();
 		}
 	});
-
+	//E-mail Ajax Send
+	$(".ajax-form").submit(function() { 
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "/catalog/view/theme/mytheme/mail.php", 
+			data: th.serialize()
+		}).done(function() {
+			alert("Ваше сообщение успешно отправлено администрации сайта!");
+			setTimeout(function() {
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 }); 
 
 function initMap() {

@@ -1,10 +1,5 @@
 <?php echo $header; ?>
 <div class="container">
-    <ul class="breadcrumb">
-        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-        <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
-        <?php } ?>
-    </ul>
     <div class="row">
         <?php echo $column_left; ?>
 
@@ -17,7 +12,7 @@
         <?php } ?>
 
         <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-            <h1 class="text-center"><?php echo $heading_title; ?></h1>
+            <div class="intro_text text-center"><h1><span><?php echo $heading_title; ?></span></h1></div>
 
             <?php if ($answers): ?>
                 <div class="panel-group faq_accordion" id="accordion" role="tablist" aria-multiselectable="true">

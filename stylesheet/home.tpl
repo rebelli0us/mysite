@@ -196,9 +196,9 @@
 						</div>
 						<div class="form-group textarea">
 							<textarea name="text" class="form-control" id="user-comment" required></textarea>
-							<label>Вопрос / комментарий / предложение</label>
+							<label>Сообщение</label>
 						</div>
-						<button class="btn btn-primary pull-right pop-up-button">Отправить</button>
+						<button class="btn btn-primary pull-right">Отправить</button>
 					</form>
 				</div>
 			</div>

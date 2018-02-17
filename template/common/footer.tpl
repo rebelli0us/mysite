@@ -34,7 +34,7 @@
 			</div>
 			<div class="col-md-3">				
 				<ul>
-					<li class="footer-title">FAQ:</li>
+					<li class="footer-title">F.A.Q.:</li>
 					<li><a href="/locco/index.php?route=extension/module/faq#collapse1" target="_blank">Что такое локализация?</a></li>
 					<li><a href="/locco/index.php?route=extension/module/faq#collapse2" target="_blank">Что такое перевод по запоросу?</a></li>
 					<li><a href="/locco/index.php?route=extension/module/faq#collapse3" target="_blank">Как оформить подписку на сервис?</a></li>
