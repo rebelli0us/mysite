@@ -42,6 +42,12 @@
 		.ipad_image 
 			right: 0
 			width: 50%
+	.simple-content
+		.well
+			padding: 0 10px
+		p
+			margin-bottom: 10px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.landing
@@ -53,6 +59,10 @@
 		font-size: 24px
 	.subscribe_me .custom_btn
 		width: 100%
+	.custom_breadcrumbs
+		margin-bottom: 0
+	.alert-success
+		width: 500px
 	footer 
 		margin-top: 60px
 		.second_column
@@ -192,11 +202,19 @@
 
 		p
 			font-size: 18px	
+	.custom_breadcrumbs
+		.num
+			font-size: 30px
+			line-height: 30px
+			padding: 15px
+			width: 60px
+			height: 60px
+			&:after
+				width: 125px
+				right: -127px
 	.subscribe_me
 		.caption
 			width: 75%
-	// .google_map
-	// 	width: 105%
 	#map
 		z-index: 0
 		&:before
@@ -215,6 +233,30 @@
 			&:focus,&:valid
 				~label
 					top: 0
+	.simple-content
+		.well
+			padding: 0 10%
+			.btn
+				width: 50vw
+				font-size: 18px
+				border-radius: 30px
+				position: relative
+				left: 50%
+				transform: translateX(-50%)
+	.intro_text,.simple_intro_text
+		h1
+			font-size: 30px
+	.account_wrapper
+		.custom_ul
+			padding-left: 17px
+		.ul_header
+			h3
+				padding-left: 30px
+	.alert-success
+		width: auto
+		left: 0
+		margin-left: 40px
+		margin-right: 40px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.row_wrapper
@@ -226,9 +268,6 @@
 			padding: 5px 7px
 	.text_info
 		padding: 10px
-	.intro_text
-		h1
-			font-size: 36px
 	.sm_btn
 		font-size: 16px
 		padding: 7px 15px
@@ -256,7 +295,7 @@
 		.form-control
 			font-size: 20px
 		footer
-			margin-top: 60px
+			padding-top: 80px
 	.review_content
 		padding: 10px 10px 20px
 	header
@@ -267,6 +306,53 @@
 	.subscribe_me
 		.caption
 			width: 100%
+	.simple-content
+		.well
+			padding: 0 2%
+			.btn
+				width: 80vw
+				font-size: 22px
+				border-radius: 30px
+				position: relative
+				left: 50%
+				transform: translateX(-50%)
+	.simpleregister-button-right,.simpleregister-button-left
+		&.xs-center
+			float: none
+			text-align: center
+			.btn
+				width: 80vw
+				border-radius: 30px
+				font-size: 22px
+				font-family: MyriadSetProThin, sans-serif
+	.buttons
+		.pull-right,.pull-left
+			&.xs-center
+				float: none!important
+				text-align: center
+				margin-bottom: 20px
+				.btn
+					width: 80vw
+					border-radius: 30px
+					font-size: 22px
+					font-family: MyriadSetProThin, sans-serif
+	.custom_breadcrumbs
+		.num
+			&:after
+				width: 60px
+				right: -62px
+
+	.intro_text,.simple_intro_text
+		h1
+			font-size: 26px
+			padding: 10px
+			border-top: 2px solid rgba(0,0,0,.05)
+			border-bottom: 2px solid rgba(0,0,0,.05)
+			span
+				border: none
+		.fa
+			margin-bottom: 0
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
