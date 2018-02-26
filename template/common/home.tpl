@@ -205,7 +205,7 @@
 		</div>
 		<a href="#top_section" class="scroll_btn animated"></a>
 		<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChZM6lGUltpvmNkDEpLU3M_dsIIQ1ZsA0&callback=initMap">
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChZM6lGUltpvmNkDEpLU3M_dsIIQ1ZsA0&callback=initMap&language=en">
 		</script>
 		<?php echo $footer; ?>
 	</section>

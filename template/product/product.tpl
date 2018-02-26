@@ -1,5 +1,31 @@
 <?php echo $header; ?>
 <div class="container">
+  <div class="row custom_breadcrumbs text-center">
+    <div class="col-xs-3">
+      <ul class="list-unstyled active">
+        <li class="num">1</li>
+        <li><em>Выбор плана подписки</em></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul class="list-unstyled active">
+        <li class="num">2</li>
+        <li><em>Активация плана подписки</em></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul class="list-unstyled">
+        <li class="num">3</li>
+        <li><em>Детали заказа подписки</em></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul class="list-unstyled last">
+        <li class="num">4</li>
+        <li><em>Переход на страницу оплаты</em></li>
+      </ul>
+    </div>
+  </div>
   <div class="row">
     <?php echo $content_top; ?>
     <div class="intro_text text-center col-md-12"> 
@@ -10,7 +36,7 @@
     </div>
   </div>
   <div class="row details_wrapper">    
-    <div class="col-md-3">
+    <div class="col-md-3 col-md-offset-1">
       <div class="subscribe_image">     
         <?php if ($thumb) { ?>
         <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>"  class="img-responsive" />
@@ -27,33 +53,33 @@
       <?php } ?>
     </div> 
     <?php if ($attribute_groups) { ?>
-    <div class="col-md-9">
+    <div class="col-md-6">
       <div class="specification">
-        <h4><?php echo $tab_attribute; ?> "<?php echo $heading_title; ?>":</h4>
+        <h4 class="text-center"><?php echo $tab_attribute; ?> "<?php echo $heading_title; ?>"</h4>
         <table class="table custom_table">
           <tbody>
             <?php foreach ($attribute_groups as $attribute_group) { ?>
             <tr>
-              <td><?php echo $attribute_group['name']; ?>:</td>
+              <td><?php echo $attribute_group['name']; ?></td>
               <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-              <td class="fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $attribute['name']; ?></td>
+              <td class="fa_relative"><i class="fa fa-check"></i> <?php echo $attribute['name']; ?></td>
               <?php } ?>
             </tr>          
             <?php } ?>
             <?php if ($price) { ?> 
             <?php if (!$special) { ?>
             <tr>                
-              <td class="td-price">Стандартная цена:</td>
-              <td class="td-price-old fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $price; ?></td>
+              <td class="td-price">Стандартная цена</td>
+              <td class="td-price-old fa_relative"><i class="fa fa-check"></i> <?php echo $price; ?></td>
             </tr>                
             <?php } else { ?>
             <tr>                
-              <td class="td-price">Стандартная цена:</td>
-              <td class="td-price-old fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $price; ?></td>
+              <td class="td-price">Стандартная цена</td>
+              <td class="td-price-old fa_relative"><i class="fa fa-check"></i> <?php echo $price; ?></td>
             </tr>
             <tr>                
-              <td class="td-price-new-heading">Цена со скидкой:</td>
-              <td class="td-price-new fa_relative"><i class="fa fa-check fa_cicrled"></i> <?php echo $special; ?></td>
+              <td class="td-price-new-heading">Цена со скидкой</td>
+              <td class="td-price-new fa_relative"><i class="fa fa-check"></i> <?php echo $special; ?></td>
             </tr>                
             <?php } ?>                  
             <?php } ?>
@@ -382,11 +408,11 @@ $('#button-cart').on('click', function() {
       }
 
       if (json['success']) {
-        $('.options_wrapper').after('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+        $('.custom_breadcrumbs').after('<div class="alert alert-success">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
         $('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
 
-        // $('html, body').animate({ scrollTop: 0 }, 'slow');
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
 
         $('#cart > ul').load('index.php?route=common/cart/info ul li');
       }
@@ -395,6 +421,7 @@ $('#button-cart').on('click', function() {
             alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
         }
   });
+  $(location).attr('href', /simplecheckout/)
 });
 //--></script>
 <script type="text/javascript"><!--

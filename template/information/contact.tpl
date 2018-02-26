@@ -44,7 +44,5 @@
 <?php echo $footer; ?>
 
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChZM6lGUltpvmNkDEpLU3M_dsIIQ1ZsA0&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChZM6lGUltpvmNkDEpLU3M_dsIIQ1ZsA0&callback=initMap&language=en">
 </script>
-
-<!-- AIzaSyChZM6lGUltpvmNkDEpLU3M_dsIIQ1ZsA0

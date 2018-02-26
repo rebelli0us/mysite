@@ -1,5 +1,31 @@
 <?php echo $header; ?>
 <div class="container">
+  <div class="row custom_breadcrumbs text-center">
+    <div class="col-xs-3">
+      <ul class="list-unstyled active">
+        <li class="num">1</li>
+        <li><em>Выбор плана подписки</em></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul class="list-unstyled">
+        <li class="num">2</li>
+        <li><em>Активация плана подписки</em></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul class="list-unstyled">
+        <li class="num">3</li>
+        <li><em>Детали заказа подписки</em></li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul class="list-unstyled last">
+        <li class="num">4</li>
+        <li><em>Переход на страницу оплаты</em></li>
+      </ul>
+    </div>
+  </div>
   <div class="row">
     <div id="content" class="col-md-12">
       <?php echo $content_top; ?>
